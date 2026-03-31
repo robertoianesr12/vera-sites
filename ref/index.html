@@ -98,9 +98,9 @@
 
         // Quotex affiliate URL com sub_id para rastreamento
         // sub_id = ref_code → aparece no painel Quotex Partner → cruza indicador
-        // Quotex Partner LID configurado
-        const quotexBase = 'https://broker-qx.pro/sign-up/?lid=2060391';
-        const brokerUrl = quotexBase + '&sub_id=' + refCode;
+        // Quotex Partner — LID + click_id para postback rastreamento
+        // click_id = ref_code → Quotex envia no postback como cid → VERA mapeia indicador
+        const brokerUrl = 'https://broker-qx.pro/sign-up/?lid=2060391&click_id=' + refCode;
         document.getElementById('btn-broker').href = brokerUrl;
 
         // Telegram group
