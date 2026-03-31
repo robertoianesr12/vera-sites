@@ -77,7 +77,11 @@
         </div>
 
         <a href="#" id="btn-telegram" class="btn btn-tg" target="_blank">Entrar no Grupo Telegram</a>
-        <a href="#" id="btn-broker" class="btn btn-broker" target="_blank">Cadastrar na Quotex (Gratis)</a>
+
+        <div style="font-size:.75rem;color:#888;margin:16px 0 8px;text-transform:uppercase;letter-spacing:2px">Cadastre-se em uma corretora</div>
+        <a href="#" id="btn-quotex" class="btn btn-broker" target="_blank" style="margin-bottom:8px">Quotex (Recomendada)</a>
+        <a href="#" id="btn-exnova" class="btn" target="_blank" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;box-shadow:0 8px 24px rgba(99,102,241,.2);margin-bottom:8px">Exnova</a>
+        <a href="#" id="btn-bubinga" class="btn" target="_blank" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;box-shadow:0 8px 24px rgba(245,158,11,.2);margin-bottom:8px">Bubinga</a>
 
         <div class="disc">Operacoes de renda variavel envolvem risco. Resultados passados nao garantem resultados futuros. Nunca invista mais do que pode perder.</div>
         <div class="ref" id="ref-display"></div>
@@ -98,9 +102,11 @@
 
         // Quotex affiliate URL com sub_id para rastreamento
         // sub_id = ref_code → aparece no painel Quotex Partner → cruza indicador
-        // Quotex Partner — LID + click_id para postback rastreamento
-        // click_id = ref_code → Quotex envia no postback como cid → VERA mapeia indicador
-        const brokerUrl = 'https://broker-qx.pro/sign-up/?lid=2060391&click_id=' + refCode;
+        // Broker links com click_id para rastreamento
+        const rc = refCode;
+        document.getElementById('btn-quotex').href = 'https://broker-qx.pro/sign-up/?lid=2060391&click_id=' + rc;
+        document.getElementById('btn-exnova').href = 'https://exnova.com/?click_id=' + rc;
+        document.getElementById('btn-bubinga').href = 'https://bubinga.com/?click_id=' + rc;
         document.getElementById('btn-broker').href = brokerUrl;
 
         // Telegram group
