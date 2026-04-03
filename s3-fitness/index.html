@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO DE ALTA PERFORMANCE - META TAGS -->
+    <title>S3 Fitness | Academia Premium em Recife, PE</title>
+    <meta name="description" content="S3 Fitness - Academia premium em Recife, PE. Nota 4.5/5 no Google (141 avaliações). Atendimento personalizado e serviços de excelência. Agende agora pelo WhatsApp.">
+    <meta name="keywords" content="Academia em Recife, PE, S3 Fitness, atendimento personalizado, consulta especializada, serviço premium, atendimento por agendamento, orçamento gratuito, Recife, fitness, treino, musculação, personal trainer Recife, melhor academia Recife">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="author" content="S3 Fitness">
+    <meta name="geo.region" content="BR-PE">
+    <meta name="geo.placename" content="Recife">
+    <link rel="canonical" href="https://www.s3-fitness.com.br/">
+
+    <!-- OPEN GRAPH + TWITTER CARDS -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="S3 Fitness | Academia Premium em Recife, PE">
+    <meta property="og:description" content="S3 Fitness - Academia premium em Recife, PE. Nota 4.5/5 no Google (141 avaliações). Atendimento personalizado e serviços de excelência. Agende agora pelo WhatsApp.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="S3 Fitness">
+    <!-- Para og:image e twitter:image, usar um URL de imagem real se disponível. Usaremos placeholders abstratos em CSS. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="S3 Fitness | Academia Premium em Recife, PE">
+    <meta name="twitter:description" content="S3 Fitness - Academia premium em Recife, PE. Nota 4.5/5 no Google (141 avaliações). Atendimento personalizado e serviços de excelência. Agende agora pelo WhatsApp.">
+
+    <!-- Favicon inline SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23C8A96E'/%3E%3Ctext x='50%25' y='50%25' font-family='Playfair Display, serif' font-size='60' text-anchor='middle' dominant-baseline='middle' fill='%230A0A0A'%3ES3%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --primary-bg: #0A0A0A;
+            --secondary-bg: #1A1A1A;
+            --accent-color: #C8A96E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A0A0A0;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --whatsapp-green: #25D366;
+            --max-width: 1200px;
+            --section-padding: 80px 20px;
+        }
+
+        /* Base Reset & Typography */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--primary-bg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-primary);
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 6vw, 3.5rem); }
+        h3 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
+
+        p {
+            margin-bottom: 1em;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-center { text-align: center; }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(200, 169, 110, 0.6); /* Golden glow */
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: var(--text-primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            padding-top: 80px; /* Account for fixed nav */
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.4) 50%, rgba(10, 10, 10, 0.8) 100%),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice"><defs><filter id="f"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="0" /><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.5" /></filter></defs><rect width="100" height="100" fill="%230A0A0A" /><rect width="100" height="100" fill="url(%23g)" filter="url(%23f)" opacity="0.1" /><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23C8A96E" stop-opacity="0.1" /><stop offset="100%" stop-color="%230A0A0A" stop-opacity="0" /></radialGradient></svg>') center/cover no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeInScale 1.5s ease-out forwards;
+        }
+
+        .hero-content h1 {
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .google-rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 8px 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .google-rating-badge svg {
+            width: 18px;
+            height: 18px;
+            fill: #FFD700; /* Gold star color */
+        }
+
+        .google-rating-badge span {
+            font-weight: 500;
+        }
+
+        /* Sections */
+        section {
+            padding: var(--section-padding);
+            position: relative;
+            overflow: hidden;
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--secondary-bg);
+        }
+
+        .section-separator {
+            width: 100px;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 20px auto 40px auto;
+        }
+
+        /* About Section */
+        #about .content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        #about .text-content {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        /* Services & Differentials Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .grid-item {
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item .icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .grid-item h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        .grid-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Ensure cards are same height in a grid */
+        }
+
+        .testimonial-card .stars {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            flex-grow: 1;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            padding-bottom: 75%; /* 4:3 aspect ratio */
+            background-color: var(--secondary-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--accent-color) 0%, var(--primary-bg) 50%, var(--accent-color) 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 5s ease infinite alternate;
+            opacity: 0.2;
+        }
+
+        .gallery-item::after {
+            content: 'Espaço S3 Fitness';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.4);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Location */
+        #location .location-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        #location .map-container {
+            flex: 2;
+            min-height: 400px;
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #location .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        #location .details-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        #location .details-container p {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+        }
+
+        #location .details-container strong {
+            color: var(--text-primary);
+        }
+
+        /* Contact */
+        #contact .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        #contact .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        #contact .contact-info p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        #contact .contact-info a {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #contact .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        #contact .contact-info svg {
+            fill: var(--accent-color);
+            width: 24px;
+            height: 24px;
+        }
+
+        #contact .contact-form {
+            flex: 2;
+            min-width: 300px;
+            max-width: 600px;
+            padding: 30px;
+            background-color: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        #contact .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #contact .contact-form input,
+        #contact .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        #contact .contact-form input::placeholder,
+        #contact .contact-form textarea::placeholder {
+            color: var(--text-secondary);
+        }
+
+        #contact .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-bg);
+            color: var(--text-secondary);
+            padding: 60px 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .footer .footer-nav {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-nav a {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .footer .footer-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer .footer-contact-info {
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-contact-info p {
+            margin-bottom: 5px;
+            color: var(--text-secondary);
+        }
+
+        .footer .footer-contact-info a {
+            color: var(--text-secondary);
+        }
+
+        .footer .footer-contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-green);
+            color: var(--text-primary);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .whatsapp-float svg {
+            fill: var(--text-primary);
+            width: 30px;
+            height: 30px;
+        }
+
+        .whatsapp-float .tooltiptext {
+            visibility: hidden;
+            width: 180px;
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            right: 105%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            border: 1px solid var(--border-color);
+        }
+
+        .whatsapp-float:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Scroll Animation (IntersectionObserver) */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Keyframe for Hero animation */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: rgba(10, 10, 10, 0.95);
+                position: absolute;
+                top: 80px; /* Below navbar */
+                left: 0;
+                padding: 20px 0;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+                padding: 10px 0;
+                display: block;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            #hero {
+                padding-top: 100px;
+            }
+
+            .section-heading {
+                margin-bottom: 40px;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            #location .location-content {
+                flex-direction: column;
+            }
+
+            #location .map-container,
+            #location .details-container {
+                min-height: auto;
+                width: 100%;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .footer .footer-nav {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 60px 15px;
+            }
+
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.3rem; }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 25px;
+                height: 25px;
+            }
+
+            .whatsapp-float .tooltiptext {
+                width: 150px;
+                font-size: 0.8rem;
+                padding: 6px 0;
+            }
+        }
+    </style>
+
+    <!-- SCHEMA.ORG / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "S3 Fitness",
+      "description": "S3 Fitness - Academia premium em Recife, PE. Nota 4.5/5 no Google (141 avaliações). Atendimento personalizado, consulta especializada e serviços de excelência. Agende agora pelo WhatsApp.",
+      "telephone": "+558132283498",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. João Francisco Lisboa, 170 - Várzea",
+        "addressLocality": "Recife",
+        "addressRegion": "PE",
+        "postalCode": "50741-100",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.0469,
+        "longitude": -34.9427
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "141"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços da S3 Fitness",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Atendimento Personalizado"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consulta Especializada"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Serviço Premium"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Atendimento por Agendamento"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Orçamento Gratuito"}}
+        ]
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:00", "closes": "22:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "12:00"}
+      ],
+      "sameAs": [
+        "https://www.google.com/maps/search/?api=1&query=S3+Fitness+Recife",
+        "https://wa.me/55558132283498"
+      ]
+    }
+    </script>
+
+    <!-- FAQ SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário de funcionamento da S3 Fitness em Recife?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A S3 Fitness funciona de segunda a sexta, das 06:00 às 22:00. Aos sábados, das 08:00 às 14:00, e aos domingos, das 09:00 às 12:00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como posso agendar uma consulta ou atendimento personalizado na S3 Fitness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você pode agendar seu atendimento personalizado ou consulta especializada diretamente pelo nosso WhatsApp, clicando no botão flutuante ou no link na seção de contato. Oferecemos orçamento gratuito para todos os nossos serviços."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais serviços a S3 Fitness oferece em Recife?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A S3 Fitness oferece atendimento personalizado, consulta especializada com profissionais qualificados, serviço premium de treino, atendimento por agendamento para sua conveniência e orçamento gratuito para todos os planos e programas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde a S3 Fitness está localizada em Recife?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nossa academia S3 Fitness está localizada na R. João Francisco Lisboa, 170 - Várzea, Recife - PE, 50741-100, Brasil. Você pode conferir a localização exata no mapa em nossa seção 'Onde Estamos'."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navegação Fixa -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="S3 Fitness - Voltar ao topo">S3 Fitness</a>
+            <button class="nav-toggle" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="Sobre a S3 Fitness">Sobre Nós</a></li>
+                <li><a href="#services" aria-label="Nossos serviços de academia">Serviços</a></li>
+                <li><a href="#differentials" aria-label="Diferenciais da S3 Fitness">Diferenciais</a></li>
+                <li><a href="#testimonials" aria-label="Depoimentos de clientes">Depoimentos</a></li>
+                <li><a href="#gallery" aria-label="Galeria de fotos da academia">Galeria</a></li>
+                <li><a href="#location" aria-label="Localização da S3 Fitness em Recife">Localização</a></li>
+                <li><a href="#contact" aria-label="Entre em contato com a S3 Fitness">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero (Banner Principal) -->
+    <section id="hero">
+        <div class="hero-content fade-in">
+            <h1 class="h1-hero">S3 Fitness | Excelência em Treino</h1>
+            <p>Sua jornada fitness premium começa aqui em Recife, PE.</p>
+            <div class="google-rating-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>4.5/5 (141 avaliações no Google)</span>
+            </div>
+            <a href="https://wa.me/55558132283498" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Fale conosco pelo WhatsApp e agende sua consulta gratuita na S3 Fitness">Agende sua Consulta Gratuita</a>
+        </div>
+    </section>
+
+    <!-- 2. Sobre Nós -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Sobre Nós</h2>
+            <div class="section-separator"></div>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>A <strong>S3 Fitness</strong> é a sua academia premium em Recife, PE, dedicada a transformar vidas através da excelência em treinamento e bem-estar. Com uma abordagem personalizada, garantimos que cada membro alcance seus objetivos de forma eficaz e sustentável.</p>
+                    <p>Nosso compromisso é com a sua saúde e performance, oferecendo um ambiente sofisticado, equipamentos de ponta e uma equipe de profissionais altamente qualificados. Na S3 Fitness, você encontra o suporte e a motivação que merece para superar limites e viver com mais qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Serviços -->
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Nossos Serviços</h2>
+            <div class="section-separator"></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de pessoa com halteres">💪</span>
+                    <h3>Atendimento Personalizado em Recife, PE</h3>
+                    <p>Programas de treino customizados para suas metas e necessidades, com foco total no seu desenvolvimento.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de médico ou especialista">🩺</span>
+                    <h3>Consulta Especializada em Recife, PE</h3>
+                    <p>Avaliações detalhadas com nossos especialistas para otimizar seu plano de saúde e performance.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de estrela premium">✨</span>
+                    <h3>Serviço Premium em Recife, PE</h3>
+                    <p>Desfrute de uma experiência de academia diferenciada, com conforto, exclusividade e os melhores recursos.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de calendário">🗓️</span>
+                    <h3>Atendimento por Agendamento em Recife, PE</h3>
+                    <p>Flexibilidade para agendar seus treinos e consultas no horário que melhor se adapta à sua rotina.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de cifrão">💰</span>
+                    <h3>Orçamento Gratuito em Recife, PE</h3>
+                    <p>Conheça nossos planos e pacotes sem compromisso e encontre a opção perfeita para você.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Diferenciais -->
+    <section id="differentials" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Por Que Nos Escolher</h2>
+            <div class="section-separator"></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de diamante">💎</span>
+                    <h3>Excelência Comprovada</h3>
+                    <p>Mais de 140 avaliações positivas no Google atestam a qualidade superior dos nossos serviços.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de escudo">🛡️</span>
+                    <h3>Profissionais Qualificados</h3>
+                    <p>Nossa equipe é formada por especialistas dedicados a guiar você rumo aos seus objetivos fitness.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de relógio">⏰</span>
+                    <h3>Flexibilidade Total</h3>
+                    <p>Agendamento fácil e horários adaptáveis para que seu treino se encaixe perfeitamente na sua vida.</p>
+                </div>
+                <div class="grid-item">
+                    <span class="icon" role="img" aria-label="Ícone de localização">📍</span>
+                    <h3>Localização Privilegiada</h3>
+                    <p>Situados na Várzea, Recife, oferecemos fácil acesso e um ambiente seguro e moderno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Depoimentos -->
+    <section id="testimonials" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">O Que Nossos Clientes Dizem</h2>
+            <div class="section-separator"></div>
+            <div class="grid-container">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A S3 Fitness transformou minha rotina! O atendimento personalizado é incrível e os profissionais são super atenciosos. Consegui resultados que nunca imaginei. Recomendo a melhor academia em Recife!"</p>
+                    <p class="author">— Ana Clara S., Cliente S3 Fitness</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ambiente impecável, equipamentos de última geração e um suporte que realmente faz a diferença. O serviço premium da S3 Fitness é incomparável. Vale cada investimento na minha saúde e bem-estar."</p>
+                    <p class="author">— João Pedro M., Cliente S3 Fitness</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Estava procurando uma academia em Recife que oferecesse mais do que apenas máquinas. Na S3, encontrei um programa sob medida e consultas especializadas que me ajudaram a entender meu corpo. Muito satisfeito!"</p>
+                    <p class="author">— Mariana L., Cliente S3 Fitness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Galeria -->
+    <section id="gallery" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Nosso Espaço</h2>
+            <div class="section-separator"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item" role="img" aria-label="Vista interna da academia S3 Fitness em Recife, PE"></div>
+                <div class="gallery-item" role="img" aria-label="Área de musculação da S3 Fitness, academia em Recife"></div>
+                <div class="gallery-item" role="img" aria-label="Espaço para treinos funcionais na S3 Fitness, Recife"></div>
+                <div class="gallery-item" role="img" aria-label="Equipamentos modernos na academia S3 Fitness"></div>
+                <div class="gallery-item" role="img" aria-label="Ambiente premium da S3 Fitness em Recife"></div>
+                <div class="gallery-item" role="img" aria-label="Recepção da S3 Fitness, academia premium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Localização -->
+    <section id="location" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Onde Estamos</h2>
+            <div class="section-separator"></div>
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe src="https://maps.google.com/maps?q=S3+Fitness+R.+Jo%C3%A3o+Francisco+Lisboa%2C+170+-+V%C3%A1rzea%2C+Recife+-+PE%2C+50741-100%2C+Brasil&output=embed"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização de S3 Fitness em Recife, PE"></iframe>
+                </div>
+                <div class="details-container">
+                    <h3>Visite a S3 Fitness em Recife, PE</h3>
+                    <p><strong>Endereço:</strong> R. João Francisco Lisboa, 170 - Várzea, Recife - PE, 50741-100, Brasil</p>
+                    <p><strong>Horário de Funcionamento:</strong></p>
+                    <p>Segunda a Sexta: 06:00 - 22:00</p>
+                    <p>Sábado: 08:00 - 14:00</p>
+                    <p>Domingo: 09:00 - 12:00</p>
+                    <p>Confira nossa localização no Google Maps e venha nos fazer uma visita!</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=S3+Fitness+Recife" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Abrir S3 Fitness no Google Maps">Ver no Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Contato -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2 class="section-heading">Entre em Contato</h2>
+            <div class="section-separator"></div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    <p>Estamos prontos para atendê-lo e tirar suas dúvidas sobre a melhor academia em Recife.</p>
+                    <a href="tel:558132283498" aria-label="Ligue para S3 Fitness: 558132283498">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.55 3.06 1.75 6.13 3.38 7.56.63.53 1.05 1.05 1.41 1.41.36.36.72.72 1.41 1.41 1.43 1.63 4.5 2.83 7.56 3.38A2 2 0 0 1 22 16.92z"></path></svg>
+                        +55 81 3228-3498
+                    </a>
+                    <a href="https://wa.me/55558132283498" target="_blank" rel="noopener noreferrer" aria-label="Envie uma mensagem para S3 Fitness via WhatsApp">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.55 3.06 1.75 6.13 3.38 7.56.63.53 1.05 1.05 1.41 1.41.36.36.72.72 1.41 1.41 1.43 1.63 4.5 2.83 7.56 3.38A2 2 0 0 1 22 16.92z"></path></svg>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form aria-label="Formulário de contato para S3 Fitness">
+                        <input type="text" placeholder="Seu Nome" aria-label="Campo para seu nome" required>
+                        <input type="tel" placeholder="Seu Telefone" aria-label="Campo para seu telefone" required>
+                        <input type="email" placeholder="Seu Email (opcional)" aria-label="Campo para seu email">
+                        <textarea placeholder="Sua Mensagem" aria-label="Campo para sua mensagem" required></textarea>
+                        <button type="submit" class="btn btn-primary" aria-label="Enviar mensagem para S3 Fitness">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#hero" class="footer-logo" aria-label="S3 Fitness - Voltar ao topo">S3 Fitness</a>
+            <ul class="footer-nav">
+                <li><a href="#about" aria-label="Link para a seção Sobre Nós">Sobre Nós</a></li>
+                <li><a href="#services" aria-label="Link para a seção Serviços">Serviços</a></li>
+                <li><a href="#differentials" aria-label="Link para a seção Diferenciais">Diferenciais</a></li>
+                <li><a href="#testimonials" aria-label="Link para a seção Depoimentos">Depoimentos</a></li>
+                <li><a href="#gallery" aria-label="Link para a seção Galeria">Galeria</a></li>
+                <li><a href="#location" aria-label="Link para a seção Localização">Localização</a></li>
+                <li><a href="#contact" aria-label="Link para a seção Contato">Contato</a></li>
+            </ul>
+            <div class="footer-contact-info">
+                <p><strong>S3 Fitness</strong></p>
+                <p>R. João Francisco Lisboa, 170 - Várzea</p>
+                <p>Recife - PE, 50741-100, Brasil</p>
+                <p>Telefone: <a href="tel:558132283498" aria-label="Telefone S3 Fitness">55 81 3228-3498</a></p>
+            </div>
+            <p>&copy; 2026 S3 Fitness. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/55558132283498" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2.02C7.09 2.02 3.01 6.1 3.01 11.05c0 1.72.48 3.36 1.34 4.83L3.01 22l5.03-1.32c1.42.78 3.03 1.25 4 1.25H12c4.95 0 9.03-4.08 9.03-9.03S17 2.02 12.04 2.02zm0 16.14c-.98 0-1.95-.26-2.79-.75l-.2-.12-2.07.54.55-2.03-.13-.21c-.54-.9-.87-1.93-.87-3.08 0-3.66 2.98-6.64 6.64-6.64 1.77 0 3.44.7 4.69 1.95s1.95 2.92 1.95 4.69c-.01 3.66-3 6.64-6.66 6.64zm3.65-4.54c-.19-.09-.9-.45-1.04-.5c-.15-.06-.25-.09-.35.09s-.4.5-.5.6c-.1.1-.2.12-.37.04s-.78-.29-1.49-.92c-.55-.49-.92-1.1-.92-1.1s-.09-.15-.09-.25c0-.1.07-.19.14-.26.06-.06.15-.15.22-.22s.15-.15.22-.25c.06-.09.03-.17-.01-.25-.04-.08-.35-.85-.48-1.16-.13-.29-.26-.25-.35-.25h-.34c-.1-.01-.25.04-.38.19-.13.15-.5.48-.5.97s.51 1.12.58 1.2c.07.08 1 1.57 2.43 2.2c.98.45 1.75.68 2.34.86.19.06.35.04.48-.09s.4-.45.46-.83c.06-.38.06-.7.04-.75-.01-.01-.06-.03-.13-.07z"/></svg>
+        <span class="tooltiptext">Fale conosco pelo WhatsApp</span>
+    </a>
+
+    <!-- JavaScript para Navegação Responsiva, Scroll Suave e Animações -->
+    <script defer>
+        // Navegação Responsiva
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Scroll Suave para Links de Navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = document.querySelector('.navbar').offsetHeight; // Altura da navbar
+                    window.scrollTo({
+                        top: targetElement.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animações com IntersectionObserver
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeInElements = document.querySelectorAll('.fade-in:not(#hero .fade-in)'); // Excluir o hero, que tem animação própria
+
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.1 // 10% do elemento visível
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('appear');
+                        observer.unobserve(entry.target); // Parar de observar depois de aparecer
+                    }
+                });
+            }, observerOptions);
+
+            fadeInElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
