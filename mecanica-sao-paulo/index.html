@@ -3,35 +3,793 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO: Meta Tags -->
     <title>Mecânica São Paulo | Oficina Mecânica em Indaiatuba, SP</title>
     <meta name="description" content="Mecânica São Paulo - Oficina Mecânica em Indaiatuba, SP. Nota 4.7/5 no Google (277 avaliacoes). Agende agora pelo WhatsApp.">
-    <meta name="keywords" content="Oficina mecânica em Indaiatuba, SP, troca de óleo e filtros, alinhamento e balanceamento, revisão completa, freios e suspensão, Indaiatuba, SP">
+    <meta name="keywords" content="Oficina mecânica em Indaiatuba, SP, troca de óleo e filtros, alinhamento e balanceamento, revisão completa, freios e suspensão, Indaiatuba, SP, injeção eletrônica, ar-condicionado automotivo">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="author" content="Mecânica São Paulo">
     <meta name="geo.region" content="BR-SP">
     <meta name="geo.placename" content="Indaiatuba">
     <link rel="canonical" href="https://www.mecanica-sao-paulo.com.br/">
 
-    <!-- SEO: Open Graph + Twitter Cards -->
+    <!-- Open Graph / Twitter Cards -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mecânica São Paulo | Oficina Mecânica em Indaiatuba, SP">
     <meta property="og:description" content="Mecânica São Paulo - Oficina Mecânica em Indaiatuba, SP. Nota 4.7/5 no Google (277 avaliacoes). Agende agora pelo WhatsApp.">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Mecânica São Paulo">
+    <!-- No og:image as per instructions (no external images) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mecânica São Paulo | Oficina Mecânica em Indaiatuba, SP">
     <meta name="twitter:description" content="Mecânica São Paulo - Oficina Mecânica em Indaiatuba, SP. Nota 4.7/5 no Google (277 avaliacoes). Agende agora pelo WhatsApp.">
+    <!-- No twitter:image as per instructions (no external images) -->
 
-    <!-- Preconnect for Google Fonts -->
+    <!-- Favicon inline SVG -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23E94560' d='M20 7h-4V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H4c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2h2v3c0 1.103.897 2 2 2h8c1.103 0 2-.897 2-2v-3h2c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM8 4h8v3h-8V4zm9 10H7v-3h10v3z'%3E%3C/path%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Source+Sans+3:wght@400&display=swap" rel="stylesheet">
 
-    <!-- Favicon inline SVG -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23E94560' d='M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Critical CSS (inline) -->
+    <style>
+        /* Reset CSS */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Schema.org JSON-LD -->
+        :root {
+            --bg-primary: #1A1A2E;
+            --bg-secondary: #16213E;
+            --accent-primary: #E94560;
+            --accent-secondary: #FF6B35;
+            --text-light: #EAEAEA;
+            --text-medium: #8892A0;
+            --text-dark: #1A1A2E; /* For buttons on light bg if any */
+            --whatsapp-green: #25D366;
+
+            /* Typography */
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Source Sans 3', sans-serif;
+            --h1-size: clamp(2.2rem, 5vw, 4rem);
+            --h2-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            --h3-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            --body-size: clamp(0.95rem, 1.5vw, 1.1rem);
+
+            /* Spacing */
+            --spacing-section-mobile: 48px;
+            --spacing-section-desktop: 80px;
+            --spacing-card-mobile: 24px;
+            --spacing-card-desktop: 32px;
+            --spacing-grid-gap: 24px;
+            --container-max-width: 1200px;
+            --container-padding: 0 24px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: var(--body-size);
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--bg-primary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.8em;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: var(--h1-size); }
+        h2 { font-size: var(--h2-size); }
+        h3 { font-size: var(--h3-size); }
+
+        p {
+            margin-bottom: 1em;
+            color: var(--text-medium);
+        }
+
+        a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-secondary);
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-max-width);
+            padding: var(--container-padding);
+            margin: auto;
+        }
+
+        /* Sections */
+        section {
+            padding: var(--spacing-section-mobile) 0;
+            position: relative;
+            overflow: hidden; /* For animations */
+        }
+        section:nth-of-type(even) {
+            background-color: var(--bg-secondary);
+        }
+        @media (min-width: 1024px) {
+            section {
+                padding: var(--spacing-section-desktop) 0;
+            }
+        }
+
+        /* Buttons & CTA */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            background-color: var(--accent-primary);
+            color: var(--text-light);
+            border: none;
+            border-radius: 6px;
+            font-family: var(--font-heading);
+            font-size: var(--body-size);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--accent-secondary);
+            outline-offset: 3px;
+            box-shadow: 0 0 0 4px rgba(var(--accent-secondary-rgb), 0.5);
+        }
+        
+        /* Focus-visible styles */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid var(--accent-secondary);
+            outline-offset: 3px;
+        }
+        
+        /* Header & Navigation */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(26, 26, 46, 0.85); /* 85% opacity */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 1rem var(--container-padding);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max-width);
+            margin: auto;
+        }
+
+        .nav-logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+        .nav-logo:hover {
+            color: var(--accent-secondary);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: none; /* Hidden by default on mobile */
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            font-family: var(--font-body);
+            font-weight: 400;
+            padding: 0.5rem 1rem;
+            display: block;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-secondary);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .hamburger-menu {
+            display: block; /* Visible on mobile */
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger-icon {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background-color: var(--text-light);
+            margin: 5px 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hamburger-menu.active .hamburger-icon:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger-menu.active .hamburger-icon:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-menu.active .hamburger-icon:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .nav-menu-mobile {
+            position: fixed;
+            top: 0;
+            right: -100%; /* Off-screen */
+            width: 70%;
+            height: 100%;
+            background-color: var(--bg-primary);
+            padding-top: 5rem;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
+            transition: right 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            z-index: 999;
+        }
+        .nav-menu-mobile.active {
+            right: 0;
+        }
+        .nav-menu-mobile li {
+            width: 100%;
+        }
+        .nav-menu-mobile a {
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(var(--text-light-rgb), 0.1);
+        }
+        .nav-menu-mobile a:hover {
+            background-color: rgba(var(--accent-primary-rgb), 0.1);
+        }
+        
+        @media (min-width: 1024px) {
+            .hamburger-menu, .nav-menu-mobile {
+                display: none;
+            }
+            .nav-links {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: var(--whatsapp-green);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .whatsapp-float a:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+        .whatsapp-float svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--text-light);
+        }
+        .whatsapp-float a:focus-visible {
+            outline: 2px solid var(--accent-secondary);
+            outline-offset: 3px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding-top: 80px; /* Adjust for fixed header */
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            z-index: 1;
+            position: relative;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: hero-fade-in 1.2s ease-out forwards;
+            animation-delay: 0.3s;
+            max-width: 900px;
+        }
+        @keyframes hero-fade-in {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 70% 30%, rgba(var(--accent-primary-rgb), 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 30% 80%, rgba(var(--accent-secondary-rgb), 0.1) 0%, transparent 40%);
+            animation: gradient-shift 20s ease infinite alternate;
+            z-index: 0;
+        }
+
+        @keyframes gradient-shift {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(5%, 5%); }
+        }
+
+        .hero-section h1 {
+            font-size: var(--h1-size);
+            color: var(--text-light);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 0.2em;
+        }
+        .hero-section p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(var(--accent-primary-rgb), 0.1);
+            border: 1px solid var(--accent-primary);
+            border-radius: 50px;
+            padding: 0.5rem 1.2rem;
+            margin-bottom: 2rem;
+            font-size: 0.9em;
+            color: var(--text-light);
+            gap: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .hero-badge svg {
+            width: 18px;
+            height: 18px;
+            fill: gold;
+        }
+
+        /* General Card Styles */
+        .card {
+            background-color: var(--bg-primary);
+            border-radius: 8px;
+            padding: var(--spacing-card-mobile);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid var(--accent-primary);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card h3 {
+            margin-bottom: 0.5em;
+            color: var(--text-light);
+        }
+        .card p {
+            color: var(--text-medium);
+            flex-grow: 1; /* To make cards same height if content varies */
+        }
+        .card svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--accent-secondary);
+            margin-bottom: 1rem;
+            transition: fill 0.3s ease;
+        }
+        .card:hover svg {
+            fill: var(--accent-primary);
+        }
+        @media (min-width: 1024px) {
+            .card {
+                padding: var(--spacing-card-desktop);
+            }
+        }
+
+        /* Grid Layouts */
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-grid-gap);
+        }
+        @media (min-width: 600px) {
+            .grid-2-col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid-2-col-desktop {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .grid-3-col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-grid-gap);
+        }
+        @media (min-width: 600px) {
+            .grid-3-col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid-3-col {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .grid-4-col {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-grid-gap);
+        }
+        @media (min-width: 600px) {
+            .grid-4-col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid-4-col {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-grid-gap);
+        }
+        .about-text p {
+            color: var(--text-light);
+        }
+        .about-highlights .card {
+            text-align: center;
+            align-items: center;
+            border-left: none;
+            border-bottom: 5px solid var(--accent-primary); /* Bottom border for highlights */
+        }
+        .about-highlights .card h3 {
+            color: var(--accent-secondary);
+            margin-bottom: 0.2em;
+        }
+        .about-highlights .card p {
+            font-size: 0.9em;
+            color: var(--text-medium);
+        }
+
+        @media (min-width: 600px) {
+            .about-content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .about-text {
+                flex: 2;
+            }
+            .about-highlights {
+                flex: 1;
+            }
+            .about-highlights .grid-3-col {
+                grid-template-columns: 1fr; /* Stack on tablet when side-by-side with text */
+            }
+        }
+        @media (min-width: 1024px) {
+            .about-content {
+                flex-direction: row;
+            }
+            .about-text {
+                flex: 1;
+            }
+            .about-highlights {
+                flex: 1;
+            }
+            .about-highlights .grid-3-col {
+                grid-template-columns: repeat(3, 1fr); /* Back to 3 columns on desktop */
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonial-card {
+            background-color: var(--bg-primary);
+            border-left: 5px solid var(--accent-secondary);
+            padding: var(--spacing-card-mobile);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-header .name {
+            font-family: var(--font-heading);
+            font-size: var(--h3-size);
+            color: var(--accent-primary);
+        }
+        .testimonial-rating {
+            display: flex;
+            gap: 2px;
+        }
+        .testimonial-rating svg {
+            width: 16px;
+            height: 16px;
+            fill: gold;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        .testimonial-badge {
+            font-size: 0.8em;
+            color: var(--text-medium);
+            background-color: rgba(var(--text-medium-rgb), 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            align-self: flex-start;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact & Location */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-light);
+        }
+        .contact-item svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--accent-secondary);
+        }
+        .contact-item span, .contact-item a {
+            font-size: var(--body-size);
+            color: var(--text-light);
+            word-break: break-word;
+        }
+        .contact-item a:hover {
+            color: var(--accent-primary);
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (min-width: 600px) {
+            .contact-location-section .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: var(--spacing-grid-gap);
+            }
+            .map-container {
+                 padding-bottom: 50%; /* More landscape on tablet */
+            }
+        }
+        @media (min-width: 1024px) {
+            .contact-location-section .container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .map-container {
+                 padding-bottom: 0; /* Full height on desktop */
+                 height: 450px; /* Specific height for larger screens */
+            }
+        }
+
+
+        /* Footer */
+        .main-footer {
+            background-color: var(--bg-primary);
+            color: var(--text-medium);
+            padding: var(--spacing-section-mobile) var(--container-padding);
+            text-align: center;
+            border-top: 1px solid rgba(var(--text-medium-rgb), 0.1);
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem 1.5rem;
+        }
+        .footer-links a {
+            color: var(--text-medium);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .footer-links a:hover {
+            color: var(--accent-secondary);
+        }
+        .footer-info p {
+            font-size: 0.9em;
+            margin: 0;
+            color: var(--text-medium);
+        }
+        .footer-info a {
+            color: var(--text-medium);
+        }
+        .footer-info a:hover {
+            color: var(--accent-secondary);
+        }
+        .footer-copyright {
+            margin-top: 1.5rem;
+            font-size: 0.8em;
+            color: var(--text-medium);
+        }
+
+        @media (min-width: 1024px) {
+            .main-footer {
+                padding: var(--spacing-section-desktop) var(--container-padding);
+            }
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                text-align: left;
+            }
+            .footer-logo {
+                flex-basis: 20%;
+                text-align: left;
+            }
+            .footer-links {
+                flex-basis: 40%;
+                justify-content: flex-start;
+            }
+            .footer-info {
+                flex-basis: 30%;
+                text-align: right;
+            }
+        }
+
+        /* Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Delay for sequential animations */
+        .animate-on-scroll:nth-child(1) { transition-delay: 0s; }
+        .animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+        .animate-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+        .animate-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+        .animate-on-scroll:nth-child(5) { transition-delay: 0.4s; }
+        .animate-on-scroll:nth-child(6) { transition-delay: 0.5s; }
+        .animate-on-scroll:nth-child(7) { transition-delay: 0.6s; }
+        .animate-on-scroll:nth-child(8) { transition-delay: 0.7s; }
+        .animate-on-scroll:nth-child(9) { transition-delay: 0.8s; }
+        .animate-on-scroll:nth-child(10) { transition-delay: 0.9s; }
+
+
+        /* Utility for RGB conversion for rgba() */
+        :root {
+            --accent-primary-rgb: 233, 69, 96;
+            --accent-secondary-rgb: 255, 107, 53;
+            --text-light-rgb: 234, 234, 234;
+            --text-medium-rgb: 136, 146, 160;
+        }
+
+    </style>
+
+    <!-- Schema.org / JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -44,12 +802,13 @@
         "streetAddress": "R. Nove de Julho, 586 - Vila Georgina, Indaiatuba - SP, 13330-100, Brasil, Indaiatuba - SP",
         "addressLocality": "Indaiatuba",
         "addressRegion": "SP",
+        "postalCode": "13330-100",
         "addressCountry": "BR"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -23.093478, /* Coordenadas aproximadas para R. Nove de Julho, 586, Indaiatuba */
-        "longitude": -47.217346
+        "latitude": "-23.0906",
+        "longitude": "-47.2185"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -58,16 +817,16 @@
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Serviços Automotivos",
+        "name": "Serviços",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Troca de Óleo e Filtros" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alinhamento e Balanceamento" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Revisão Completa" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freios e Suspensão" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Injeção Eletrônica" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ar-condicionado Automotivo" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico Computadorizado" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Câmbio e Embreagem" } }
+          "Troca de Óleo e Filtros",
+          "Alinhamento e Balanceamento",
+          "Revisão Completa",
+          "Freios e Suspensão",
+          "Injeção Eletrônica",
+          "Ar-condicionado Automotivo",
+          "Diagnóstico Computadorizado",
+          "Câmbio e Embreagem"
         ]
       },
       "priceRange": "$$",
@@ -81,6 +840,7 @@
       ]
     }
     </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -91,1072 +851,275 @@
           "name": "Qual o horário de funcionamento da Mecânica São Paulo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Atendemos de segunda a sexta-feira, das 08:00 às 18:00, e aos sábados, das 08:00 às 12:00."
+            "text": "Atendemos de segunda a sexta-feira, das 08:00 às 18:00, e aos sábados, das 08:00 às 12:00. Estamos prontos para cuidar do seu veículo!"
           }
         },
         {
           "@type": "Question",
-          "name": "Como agendar uma consulta na Mecânica São Paulo em Indaiatuba, SP?",
+          "name": "Como agendar uma consulta ou serviço na Mecânica São Paulo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Você pode agendar um horário facilmente pelo nosso WhatsApp, clicando no botão 'Solicite um orçamento sem compromisso' em nosso site ou diretamente pelo telefone 551938342646."
+            "text": "Você pode agendar seu serviço ou solicitar um orçamento diretamente pelo nosso WhatsApp, clicando no botão 'Solicite um orçamento' ou ligando para +55 (19) 3834-2646. Estamos à disposição para atendê-lo."
           }
         },
         {
           "@type": "Question",
-          "name": "Quais serviços a Mecânica São Paulo oferece para veículos em Indaiatuba?",
+          "name": "Quais os principais serviços oferecidos pela Mecânica São Paulo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oferecemos uma gama completa de serviços, incluindo troca de óleo e filtros, alinhamento e balanceamento, revisão completa, freios e suspensão, injeção eletrônica, ar-condicionado automotivo, diagnóstico computadorizado e serviços de câmbio e embreagem."
+            "text": "Oferecemos uma gama completa de serviços, incluindo Troca de Óleo e Filtros, Alinhamento e Balanceamento, Revisão Completa, Freios e Suspensão, Injeção Eletrônica, Ar-condicionado Automotivo, Diagnóstico Computadorizado, e serviços de Câmbio e Embreagem."
           }
         },
         {
           "@type": "Question",
-          "name": "A Mecânica São Paulo oferece garantia nos serviços?",
+          "name": "A Mecânica São Paulo oferece garantia nos serviços e peças?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, todos os nossos serviços são realizados com peças de qualidade e mão de obra especializada, acompanhados de garantia para sua total tranquilidade e confiança."
+            "text": "Sim, na Mecânica São Paulo, todos os nossos serviços e peças utilizadas possuem garantia, assegurando a sua tranquilidade e a qualidade do nosso trabalho. A satisfação e segurança do cliente são nossa prioridade."
           }
         }
       ]
     }
     </script>
-
-    <style>
-        /* Critical CSS - Reset & Base Styles */
-        :root {
-            --bg-primary: #1A1A2E;
-            --bg-secondary: #16213E;
-            --accent-primary: #E94560;
-            --accent-secondary: #FF6B35;
-            --text-light: #EAEAEA;
-            --text-muted: #8892A0;
-            --whatsapp-green: #25D366;
-
-            /* Spacing system (8px grid) */
-            --spacing-xs: 8px;
-            --spacing-sm: 16px;
-            --spacing-md: 24px;
-            --spacing-lg: 32px;
-            --spacing-xl: 48px;
-            --spacing-xxl: 80px;
-
-            /* Container */
-            --container-max-width: 1200px;
-            --container-padding: 0 var(--spacing-md); /* 24px */
-
-            /* Typography scale */
-            --font-h1: clamp(2.2rem, 5vw, 4rem);
-            --font-h2: clamp(1.6rem, 3.5vw, 2.4rem);
-            --font-h3: clamp(1.1rem, 2.5vw, 1.4rem);
-            --font-body: clamp(0.95rem, 1.5vw, 1.1rem);
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%; /* Prevent text zoom on orientation change */
-            font-size: 16px;
-        }
-
-        body {
-            font-family: 'Source Sans 3', sans-serif;
-            line-height: 1.6;
-            color: var(--text-light);
-            background-color: var(--bg-primary);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Oswald', sans-serif;
-            font-weight: 600;
-            line-height: 1.2;
-            color: var(--text-light);
-        }
-
-        h1 { font-size: var(--font-h1); }
-        h2 { font-size: var(--font-h2); }
-        h3 { font-size: var(--font-h3); }
-
-        p {
-            font-size: var(--font-body);
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-muted);
-        }
-
-        a {
-            color: var(--accent-primary);
-            text-decoration: none;
-            transition: color 0.3s ease, background-color 0.3s ease;
-        }
-
-        a:hover {
-            color: var(--accent-secondary);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        /* Utility Classes */
-        .container {
-            max-width: var(--container-max-width);
-            margin: 0 auto;
-            padding: var(--container-padding);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .section-padding {
-            padding: var(--spacing-xl) 0; /* Mobile default */
-        }
-
-        @media (min-width: 1024px) {
-            .section-padding {
-                padding: var(--spacing-xxl) 0; /* Desktop */
-            }
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: var(--spacing-sm) var(--spacing-lg);
-            background-color: var(--accent-primary);
-            color: var(--text-light);
-            font-family: 'Oswald', sans-serif;
-            font-weight: 600;
-            font-size: var(--font-body);
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-secondary);
-            transform: translateY(-2px);
-        }
-
-        .btn:focus-visible {
-            outline: 2px solid var(--accent-secondary);
-            outline-offset: 4px;
-        }
-
-        /* Accessibility: Focus-visible */
-        *:focus-visible {
-            outline: 2px solid var(--accent-secondary);
-            outline-offset: 3px;
-            border-radius: 2px;
-        }
-
-        /* Animation class for Intersection Observer */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-            will-change: opacity, transform;
-        }
-
-        .animate-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Header & Navigation */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(26, 26, 46, 0.85); /* var(--bg-primary) with opacity */
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-            padding: var(--spacing-sm) var(--container-padding);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: var(--container-max-width);
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-family: 'Oswald', sans-serif;
-            font-weight: 600;
-            font-size: var(--font-h3);
-            color: var(--accent-primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            white-space: nowrap;
-        }
-
-        .nav-toggle {
-            display: block; /* Mobile: Hamburger */
-            background: none;
-            border: none;
-            color: var(--text-light);
-            font-size: var(--spacing-lg); /* Adjust size as needed */
-            cursor: pointer;
-            padding: var(--spacing-xs);
-        }
-
-        .nav-toggle svg {
-            width: 28px;
-            height: 28px;
-            vertical-align: middle;
-        }
-
-        .nav-menu {
-            display: none; /* Hidden by default on mobile */
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: rgba(22, 33, 62, 0.95); /* var(--bg-secondary) with opacity */
-            backdrop-filter: blur(8px);
-            padding: var(--spacing-sm) 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            list-style: none;
-            text-align: center;
-            transform: translateY(-10px);
-            opacity: 0;
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        }
-
-        .nav-menu.active {
-            display: flex;
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .nav-menu li {
-            margin: var(--spacing-xs) 0;
-        }
-
-        .nav-menu a {
-            color: var(--text-light);
-            font-family: 'Oswald', sans-serif;
-            font-weight: 400;
-            font-size: var(--font-body);
-            padding: var(--spacing-xs) var(--spacing-md);
-            display: block;
-        }
-
-        .nav-menu a:hover {
-            color: var(--accent-secondary);
-            background-color: rgba(233, 69, 96, 0.1); /* var(--accent-primary) with opacity */
-            border-radius: 4px;
-        }
-
-        @media (min-width: 1024px) { /* Desktop: full nav links */
-            .nav-toggle {
-                display: none;
-            }
-
-            .nav-menu {
-                position: static;
-                display: flex;
-                flex-direction: row;
-                background: none;
-                backdrop-filter: none;
-                box-shadow: none;
-                padding: 0;
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            .nav-menu li {
-                margin: 0 var(--spacing-sm);
-            }
-
-            .nav-menu a {
-                padding: var(--spacing-xs) var(--spacing-sm);
-            }
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-            position: relative;
-            overflow: hidden; /* To contain pseudo-elements */
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at center, rgba(233, 69, 96, 0.05) 0%, rgba(26, 26, 46, 0) 70%);
-            animation: rotateBackground 20s infinite linear;
-            z-index: 1;
-        }
-
-        @keyframes rotateBackground {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            padding: var(--container-padding);
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInTranslate 1s ease-out forwards;
-            animation-delay: 0.3s;
-        }
-
-        @keyframes fadeInTranslate {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero h1 {
-            color: var(--accent-primary);
-            margin-bottom: var(--spacing-sm);
-            text-shadow: 0 0 10px rgba(233, 69, 96, 0.4);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: var(--font-h3);
-            color: var(--text-light);
-            margin-bottom: var(--spacing-lg);
-            font-family: 'Source Sans 3', sans-serif;
-            font-weight: 400;
-        }
-
-        .google-badge {
-            display: inline-flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--text-light);
-            padding: var(--spacing-xs) var(--spacing-sm);
-            border-radius: 20px;
-            margin-bottom: var(--spacing-lg);
-            font-size: 0.9em;
-            font-weight: 400;
-            font-family: 'Source Sans 3', sans-serif;
-        }
-
-        .google-badge svg {
-            width: 16px;
-            height: 16px;
-            margin-right: var(--spacing-xs);
-            fill: #FFD700; /* Star color */
-        }
-
-        .hero .btn {
-            padding: var(--spacing-md) var(--spacing-xl);
-            font-size: var(--font-h3);
-        }
-
-        /* About Section */
-        .about-section {
-            background-color: var(--bg-secondary);
-        }
-
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-lg);
-        }
-
-        .about-text h2 {
-            margin-bottom: var(--spacing-md);
-            color: var(--accent-primary);
-        }
-
-        .about-text p {
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .about-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: var(--spacing-md);
-            margin-top: var(--spacing-lg);
-        }
-
-        .stat-card {
-            background-color: var(--bg-primary);
-            padding: var(--spacing-md);
-            border-radius: 8px;
-            text-align: center;
-            border-left: 4px solid var(--accent-secondary);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .stat-card strong {
-            display: block;
-            font-size: var(--font-h2);
-            color: var(--accent-primary);
-            margin-bottom: var(--spacing-xs);
-            font-family: 'Oswald', sans-serif;
-        }
-
-        .stat-card span {
-            font-size: var(--font-body);
-            color: var(--text-muted);
-            font-family: 'Source Sans 3', sans-serif;
-        }
-
-        @media (min-width: 600px) {
-            .about-content {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            .about-text {
-                flex: 2;
-                padding-right: var(--spacing-lg);
-            }
-            .about-stats {
-                flex: 1;
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .about-text {
-                flex: 3;
-            }
-            .about-stats {
-                flex: 1;
-                grid-template-columns: 1fr; /* Keep single column or adjust as needed */
-                max-width: 300px; /* Limit width */
-            }
-        }
-
-        /* Services Section */
-        .services-section {
-            background-color: var(--bg-primary);
-        }
-
-        .services-section h2 {
-            margin-bottom: var(--spacing-xl);
-            text-align: center;
-            color: var(--accent-primary);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Mobile: 1 column */
-            gap: var(--spacing-md);
-        }
-
-        @media (min-width: 600px) { /* Tablet: 2 columns */
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) { /* Desktop: 3 columns */
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        .service-card {
-            background-color: var(--bg-secondary);
-            padding: var(--spacing-md);
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-primary);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .service-card-icon {
-            width: 48px;
-            height: 48px;
-            margin-bottom: var(--spacing-sm);
-            fill: var(--accent-secondary);
-            flex-shrink: 0;
-        }
-
-        .service-card h3 {
-            font-size: var(--font-h3);
-            margin-bottom: var(--spacing-xs);
-            color: var(--text-light);
-            text-transform: uppercase;
-        }
-
-        .service-card p {
-            font-size: var(--font-body);
-            color: var(--text-muted);
-        }
-
-        /* Differentials Section */
-        .differentials-section {
-            background-color: var(--bg-secondary);
-        }
-
-        .differentials-section h2 {
-            margin-bottom: var(--spacing-xl);
-            text-align: center;
-            color: var(--accent-primary);
-        }
-
-        .differentials-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Mobile: 1 column */
-            gap: var(--spacing-md);
-        }
-
-        @media (min-width: 600px) { /* Tablet: 2 columns */
-            .differentials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) { /* Desktop: 4 columns */
-            .differentials-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-        .differential-card {
-            background-color: var(--bg-primary);
-            padding: var(--spacing-md);
-            border-radius: 8px;
-            text-align: center;
-            border-top: 4px solid var(--accent-secondary);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .differential-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .differential-card-icon {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto var(--spacing-sm);
-            fill: var(--accent-primary);
-        }
-
-        .differential-card h3 {
-            font-size: var(--font-h3);
-            margin-bottom: var(--spacing-xs);
-            color: var(--text-light);
-            text-transform: uppercase;
-        }
-
-        .differential-card p {
-            font-size: var(--font-body);
-            color: var(--text-muted);
-        }
-
-        /* Testimonials Section */
-        .testimonials-section {
-            background-color: var(--bg-primary);
-        }
-
-        .testimonials-section h2 {
-            margin-bottom: var(--spacing-xl);
-            text-align: center;
-            color: var(--accent-primary);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Mobile: 1 column */
-            gap: var(--spacing-md);
-        }
-
-        @media (min-width: 600px) { /* Tablet: 2 columns */
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) { /* Desktop: 3 columns */
-            .testimonials-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        .testimonial-card {
-            background-color: var(--bg-secondary);
-            padding: var(--spacing-md);
-            border-radius: 8px;
-            border-right: 4px solid var(--accent-secondary);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .testimonial-card .stars {
-            margin-bottom: var(--spacing-xs);
-            display: flex;
-        }
-
-        .testimonial-card .stars svg {
-            width: 18px;
-            height: 18px;
-            fill: #FFD700; /* Gold color for stars */
-            margin-right: 2px;
-        }
-
-        .testimonial-card p {
-            font-style: italic;
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-light);
-            flex-grow: 1; /* Make text take available space */
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--accent-primary);
-            font-family: 'Oswald', sans-serif;
-            margin-top: var(--spacing-xs);
-        }
-
-        .testimonial-source {
-            font-size: 0.85em;
-            color: var(--text-muted);
-            margin-top: var(--spacing-xs);
-            display: block;
-        }
-
-        /* Location & Contact Section */
-        .contact-section {
-            background-color: var(--bg-secondary);
-        }
-
-        .contact-section h2 {
-            margin-bottom: var(--spacing-xl);
-            text-align: center;
-            color: var(--accent-primary);
-        }
-
-        .contact-content {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-lg);
-        }
-
-        .contact-info {
-            background-color: var(--bg-primary);
-            padding: var(--spacing-md);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-left: 4px solid var(--accent-primary);
-        }
-
-        .contact-info h3 {
-            margin-bottom: var(--spacing-sm);
-            color: var(--text-light);
-            text-transform: uppercase;
-        }
-
-        .contact-info p {
-            margin-bottom: var(--spacing-xs);
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-        }
-
-        .contact-info p svg {
-            margin-right: var(--spacing-xs);
-            fill: var(--accent-secondary);
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-        }
-
-        .contact-info a {
-            color: var(--text-light);
-        }
-
-        .contact-info a:hover {
-            color: var(--accent-secondary);
-        }
-
-        .map-container {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            min-height: 300px;
-            border: 1px solid var(--bg-primary);
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            display: block;
-        }
-
-        @media (min-width: 600px) {
-            .contact-content {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-            .contact-info {
-                flex: 1;
-                margin-right: var(--spacing-lg);
-            }
-            .map-container {
-                flex: 2;
-                min-height: 400px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .contact-info {
-                flex: 1;
-            }
-            .map-container {
-                flex: 2;
-            }
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--bg-primary);
-            color: var(--text-muted);
-            padding: var(--spacing-xl) var(--container-padding);
-            text-align: center;
-            border-top: 1px solid rgba(233, 69, 96, 0.2);
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--spacing-md);
-        }
-
-        .footer-nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: var(--spacing-sm);
-        }
-
-        .footer-nav a {
-            color: var(--text-muted);
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .footer-nav a:hover {
-            color: var(--accent-secondary);
-        }
-
-        .footer p {
-            font-size: 0.85em;
-            margin-bottom: 0;
-            color: var(--text-muted);
-        }
-
-        .footer .logo {
-            margin-bottom: var(--spacing-sm);
-        }
-
-        @media (min-width: 600px) {
-            .footer-content {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .footer .logo {
-                margin-bottom: 0;
-            }
-            .footer-nav {
-                order: 1; /* Puts nav in middle */
-            }
-            .footer-nav ul {
-                gap: var(--spacing-md);
-            }
-            .footer-info {
-                order: 2; /* Puts info at the end */
-                text-align: right;
-            }
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: var(--spacing-lg);
-            right: var(--spacing-lg);
-            background-color: var(--whatsapp-green);
-            color: var(--text-light);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            z-index: 1001;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            cursor: pointer;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background-color: #20b05b; /* Slightly darker green */
-        }
-
-        .whatsapp-float svg {
-            width: 32px;
-            height: 32px;
-            fill: var(--text-light);
-        }
-    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <a href="#hero" class="logo" aria-label="Mecânica São Paulo - Página Inicial">Mecânica São Paulo</a>
-            <button class="nav-toggle" aria-label="Abrir menu de navegação">
-                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                </svg>
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/551938342646" target="_blank" rel="noopener noreferrer" aria-label="Agendar serviço via WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C7.34 2 3.41 5.78 3.41 10.49c0 1.95.63 3.82 1.73 5.38L2 22l6.05-1.64c1.48.81 3.19 1.25 4.04 1.25 4.71 0 8.64-3.78 8.64-8.49S16.75 2 12.04 2zM17.3 15.68c-.2-.1-.73-.36-.84-.4c-.12-.04-.25-.05-.36.05-.12.1-.45.4-.55.49-.1.1-.2.1-.37.04s-.73-.27-.9-.33c-.17-.06-.3-.04-.4.04-.1.1-.39.4-.5 1.42-.11.92-.22 1.4-.22 1.4s-.1.12-.21.11c-.11 0-.4-.15-.84-.34-.4-.18-.95-.46-1.35-.78-.4-.32-.8-.72-1.07-1.17-.26-.45-.03-.7-.02-.8s.18-.42.24-.55c.06-.12.03-.22-.03-.33-.06-.1-.36-.87-.49-1.2C8.7 9.17 8.44 9.02 8.34 9s-.23-.05-.36-.05c-.12 0-.3.04-.45.2-.14.16-.54.53-.54 1.3c0 .77.56 1.5.64 1.6c.09.1.95 1.62 2.3 2.29.98.48 1.77.7 2.37.89.6.19 1.15.16 1.58.1.44-.06.73-.27.84-.4C17.42 16.08 17.5 15.78 17.3 15.68z"/></svg>
+        </a>
+    </div>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#hero" class="nav-logo" aria-label="Mecânica São Paulo - Voltar ao início">Mecânica São Paulo</a>
+            <ul class="nav-links">
+                <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
+                <li><a href="#servicos" aria-label="Ir para a seção de Serviços">Serviços</a></li>
+                <li><a href="#diferenciais" aria-label="Ir para a seção de Diferenciais">Diferenciais</a></li>
+                <li><a href="#depoimentos" aria-label="Ir para a seção de Depoimentos">Depoimentos</a></li>
+                <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
             </button>
-            <nav class="nav-menu" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
+        <ul class="nav-menu-mobile">
+            <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
+            <li><a href="#servicos" aria-label="Ir para a seção de Serviços">Serviços</a></li>
+            <li><a href="#diferenciais" aria-label="Ir para a seção de Diferenciais">Diferenciais</a></li>
+            <li><a href="#depoimentos" aria-label="Ir para a seção de Depoimentos">Depoimentos</a></li>
+            <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
+        </ul>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
+        <!-- 1. HERO Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
                 <h1 class="animate-on-scroll">Mecânica São Paulo</h1>
                 <p class="animate-on-scroll" style="animation-delay: 0.5s;">Confiança e precisão para o seu veículo em Indaiatuba, SP.</p>
-                <div class="google-badge animate-on-scroll" style="animation-delay: 0.7s;">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                    </svg>
+                <div class="hero-badge animate-on-scroll" style="animation-delay: 0.7s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     4.7 ★ no Google (277 avaliações)
                 </div>
-                <a href="https://wa.me/551938342646" target="_blank" class="btn animate-on-scroll" aria-label="Solicite um orçamento sem compromisso via WhatsApp" style="animation-delay: 0.9s;">
-                    Solicite um Orçamento Sem Compromisso
+                <a href="https://wa.me/551938342646" target="_blank" rel="noopener noreferrer" class="btn animate-on-scroll" aria-label="Solicite um orçamento sem compromisso via WhatsApp" style="animation-delay: 0.9s;">
+                    Solicite um orçamento sem compromisso
                 </a>
             </div>
         </section>
 
-        <section id="sobre" class="about-section section-padding">
-            <div class="container animate-on-scroll">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Sobre a Mecânica São Paulo em Indaiatuba, SP</h2>
-                        <p>Desde <strong>2009</strong>, a Mecânica São Paulo tem sido o ponto de referência em <strong>serviços automotivos de alta qualidade em Indaiatuba, SP</strong>. Nosso compromisso é com a excelência, utilizando as mais modernas técnicas e equipamentos para garantir que seu veículo receba o cuidado que merece. Localizados na <strong>R. Nove de Julho, 586 - Vila Georgina</strong>, somos reconhecidos pela comunidade, com uma impressionante <strong>nota de 4.7/5 em 277 avaliações no Google</strong>.</p>
-                        <p>Acreditamos que a confiança se constrói com transparência, honestidade e um serviço impecável. Nossa equipe de mecânicos especializados está pronta para diagnosticar e resolver qualquer problema, desde a manutenção preventiva até os reparos mais complexos, sempre com foco na sua segurança e satisfação.</p>
+        <!-- 2. SOBRE Section -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Sobre a Mecânica São Paulo</h2>
+                <div class="about-content grid-2-col-desktop">
+                    <div class="about-text animate-on-scroll">
+                        <p>Na <strong>Mecânica São Paulo</strong>, somos mais do que uma oficina; somos parceiros dedicados à saúde e performance do seu veículo. Localizados estrategicamente na <strong>R. Nove de Julho, 586 - Vila Georgina, Indaiatuba - SP</strong>, atendemos com excelência e transparência há anos, conquistando a confiança de nossos clientes.</p>
+                        <p>Nossa missão é oferecer serviços automotivos de alta qualidade, utilizando equipamentos de última geração e uma equipe de mecânicos experientes e constantemente atualizados. Entendemos a importância do seu carro no dia a dia e, por isso, cada reparo e manutenção é realizado com o máximo rigor e atenção aos detalhes.</p>
+                        <p>Orgulhamo-nos da nossa reputação, refletida em uma <strong>nota de 4.7/5 no Google</strong>, com mais de 277 avaliações positivas. Essa é a prova do nosso compromisso com a satisfação e a segurança de cada cliente. Venha nos visitar e descubra a diferença de um serviço automotivo feito com paixão e profissionalismo.</p>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <strong>15+</strong>
-                            <span>Anos de Experiência</span>
+                    <div class="about-highlights grid-3-col animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="card">
+                            <h3>277+</h3>
+                            <p>Avaliações Positivas</p>
                         </div>
-                        <div class="stat-card">
-                            <strong>4.7/5</strong>
-                            <span>Nota no Google</span>
+                        <div class="card">
+                            <h3>4.7/5</h3>
+                            <p>Nota no Google</p>
                         </div>
-                        <div class="stat-card">
-                            <strong>277+</strong>
-                            <span>Avaliações Positivas</span>
+                        <div class="card">
+                            <h3>15+ Anos</h3>
+                            <p>de Expertise no Ramo</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="servicos" class="services-section section-padding">
-            <div class="container animate-on-scroll">
-                <h2>Nossos Serviços Automotivos em Indaiatuba</h2>
-                <div class="services-grid">
-                    <div class="service-card animate-on-scroll">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+        <!-- 3. SERVICOS Section -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Nossos Serviços Automotivos</h2>
+                <p class="animate-on-scroll">Conte com a Mecânica São Paulo para uma manutenção completa e eficiente do seu veículo.</p>
+
+                <div class="grid-2-col grid-4-col animate-on-scroll">
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-12h4c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2zm0 2v2h4V8h-4zm-2 6h8v2h-8z"/></svg>
                         <h3>Troca de Óleo e Filtros</h3>
-                        <p>Mantenha a saúde do motor do seu veículo com trocas de óleo e filtros regulares, utilizando produtos de alta qualidade.</p>
+                        <p>Mantenha a saúde do motor do seu carro com a troca de óleo e filtros em Indaiatuba, SP, usando produtos de alta qualidade.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12c0-2.76-2.24-5-5-5h-2V5c0-1.1-.9-2-2-2S9 3.9 9 5v2H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h2v2c0 1.1.9 2 2 2s2-.9 2-2v-2h2c2.76 0 5-2.24-5-5zm-5 3h-2v-2h2c1.1 0 2 .9 2 2s-.9 2-2 2zM7 9h2V7H7c-1.1 0-2 .9-2 2s.9 2 2 2z"/></svg>
                         <h3>Alinhamento e Balanceamento</h3>
-                        <p>Garanta a segurança e a durabilidade dos pneus com serviços precisos de alinhamento e balanceamento.</p>
+                        <p>Garanta a estabilidade e prolongue a vida útil dos pneus com alinhamento e balanceamento precisos em Indaiatuba, SP.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2h1.72l-.72 1.93zM17.93 13H15v-2h2.93c-.64 2.11-1.98 3.82-3.69 4.73L17.93 13zM15 9V6.07L18.79 8c-.13.58-.21 1.17-.21 1.79 0 1.95.71 3.76 1.92 5.15L15 9zM12 4.07V6h2c.73 0 1.41.19 2.02.52L12 4.07zm-4.07 1.93L12 9h-2c-1.1 0-2-.9-2-2V5.28c.6-.33 1.28-.52 2-.52z"/></svg>
                         <h3>Revisão Completa</h3>
-                        <p>Realize a revisão completa do seu veículo para viagens ou manutenção periódica, prevenindo problemas futuros.</p>
+                        <p>Realize uma revisão completa em Indaiatuba, SP, para identificar e prevenir problemas, mantendo seu veículo seguro e confiável.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.3s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
                         <h3>Freios e Suspensão</h3>
-                        <p>Garantimos a sua segurança com a manutenção e reparo de sistemas de freios e suspensão de todas as marcas.</p>
+                        <p>Garanta sua segurança com a manutenção especializada de freios e suspensão em Indaiatuba, SP, para um dirigir suave e seguro.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.4s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
                         <h3>Injeção Eletrônica</h3>
-                        <p>Diagnóstico e reparo precisos para sistemas de injeção eletrônica, otimizando o desempenho e consumo.</p>
+                        <p>Diagnóstico e reparo de injeção eletrônica em Indaiatuba, SP, para otimizar o consumo de combustível e a performance do motor.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.5s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-10h2v4h-2zm0 6h2v2h-2z"/></svg>
                         <h3>Ar-condicionado Automotivo</h3>
-                        <p>Serviços completos para o sistema de ar-condicionado, garantindo conforto e ar puro no seu veículo.</p>
+                        <p>Serviços completos de ar-condicionado automotivo em Indaiatuba, SP, para seu conforto em todas as estações.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.6s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
                         <h3>Diagnóstico Computadorizado</h3>
-                        <p>Identificação rápida e precisa de falhas eletrônicas com equipamentos de diagnóstico de última geração.</p>
+                        <p>Utilizamos tecnologia avançada para um diagnóstico computadorizado preciso de falhas em Indaiatuba, SP, economizando seu tempo e dinheiro.</p>
                     </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.7s;">
-                        <svg class="service-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
                         <h3>Câmbio e Embreagem</h3>
-                        <p>Manutenção especializada e substituição de câmbios e embreagens, garantindo trocas suaves e eficientes.</p>
+                        <p>Manutenção e reparo especializado em câmbio e embreagem em Indaiatuba, SP, para a transmissão perfeita do seu veículo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="diferenciais" class="differentials-section section-padding">
-            <div class="container animate-on-scroll">
-                <h2>Por Que Escolher a Mecânica São Paulo?</h2>
-                <div class="differentials-grid">
-                    <div class="differential-card animate-on-scroll">
-                        <svg class="differential-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM10.75 8.25h2.5v2.5h-2.5zm0 5h2.5v2.5h-2.5z"/></svg>
-                        <h3>Tecnologia Avançada</h3>
-                        <p>Equipamentos de diagnóstico de última geração para precisão e eficiência em cada serviço.</p>
+        <!-- 4. DIFERENCIAIS Section -->
+        <section id="diferenciais" class="features-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Por Que Escolher a Mecânica São Paulo?</h2>
+                <p class="animate-on-scroll">Descubra os pilares que nos tornam a escolha ideal para o cuidado do seu carro.</p>
+
+                <div class="grid-2-col grid-4-col animate-on-scroll">
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
+                        <h3>Tecnologia de Ponta</h3>
+                        <p>Investimos em equipamentos de diagnóstico e reparo de última geração para garantir precisão e eficiência.</p>
                     </div>
-                    <div class="differential-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <svg class="differential-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
-                        <h3>Equipe Certificada</h3>
-                        <p>Mecânicos experientes e em constante treinamento para atender às exigências dos veículos modernos.</p>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
+                        <h3>Mão de Obra Qualificada</h3>
+                        <p>Nossa equipe é formada por mecânicos certificados e com vasta experiência, prontos para qualquer desafio.</p>
                     </div>
-                    <div class="differential-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <svg class="differential-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                        <h3>Garantia de Serviço</h3>
-                        <p>Oferecemos garantia em todos os serviços e peças, assegurando a sua tranquilidade e satisfação.</p>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
+                        <h3>Peças Genuínas e Garantia</h3>
+                        <p>Utilizamos apenas peças de qualidade comprovada e oferecemos garantia em todos os serviços realizados.</p>
                     </div>
-                    <div class="differential-card animate-on-scroll" style="animation-delay: 0.3s;">
-                        <svg class="differential-card-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5l-3.5-3.5 1.41-1.41L11 14.67l5.09-5.09L17.5 11l-6.5 6.5z"/></svg>
-                        <h3>Transparência Total</h3>
-                        <p>Orçamentos claros e detalhados, explicando cada etapa do serviço sem surpresas.</p>
+                    <div class="card">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
+                        <h3>Transparência e Confiança</h3>
+                        <p>Explicamos cada etapa do processo e oferecemos orçamentos claros, sem surpresas.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="depoimentos" class="testimonials-section section-padding">
-            <div class="container animate-on-scroll">
-                <h2>O Que Nossos Clientes Dizem sobre a Mecânica São Paulo</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="stars">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <!-- 5. DEPOIMENTOS Section -->
+        <section id="depoimentos" class="testimonials-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">O Que Nossos Clientes Dizem</h2>
+                <p class="animate-on-scroll">A satisfação dos nossos clientes é o nosso maior combustível.</p>
+
+                <div class="grid-2-col grid-3-col animate-on-scroll">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="name">Ana Paula S.</span>
+                            <div class="testimonial-rating">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
                         </div>
-                        <p>"Excelente serviço! Levei meu carro para uma revisão completa e o atendimento foi impecável. A equipe é muito profissional e transparente. Recomendo a todos em Indaiatuba!"</p>
-                        <span class="testimonial-author">Carlos Eduardo S.</span>
-                        <span class="testimonial-source">Avaliação do Google</span>
+                        <p>"Excelente serviço! Meu carro ficou como novo após a revisão. Atendimento super atencioso e preços justos. Recomendo a Mecânica São Paulo a todos em Indaiatuba!"</p>
+                        <span class="testimonial-badge">Avaliação do Google</span>
                     </div>
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <div class="stars">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="name">Carlos Alberto F.</span>
+                            <div class="testimonial-rating">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21l6.18-3.72L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                            </div>
                         </div>
-                        <p>"Fui surpreendida pela honestidade e eficiência. Resolveram um problema no meu freio que outras oficinas não conseguiram. Preço justo e serviço de confiança."</p>
-                        <span class="testimonial-author">Mariana Ferreira</span>
-                        <span class="testimonial-source">Avaliação do Google</span>
+                        <p>"Levei meu carro para um diagnóstico de injeção eletrônica e fiquei impressionado com a rapidez e a precisão. Problema resolvido no mesmo dia! Profissionais de verdade."</p>
+                        <span class="testimonial-badge">Avaliação do Google</span>
                     </div>
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <div class="stars">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <span class="name">Mariana G.</span>
+                            <div class="testimonial-rating">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
                         </div>
-                        <p>"Serviço de primeira na troca de óleo e filtros. Rápido, eficiente e com um atendimento ao cliente que faz a diferença. Minha oficina de confiança agora!"</p>
-                        <span class="testimonial-author">Roberto Almeida</span>
-                        <span class="testimonial-source">Avaliação do Google</span>
+                        <p>"Sempre levo meu carro na Mecânica São Paulo para troca de óleo e manutenção. O atendimento é sempre cordial e o serviço de primeira. Confio de olhos fechados!"</p>
+                        <span class="testimonial-badge">Avaliação do Google</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="contact-section section-padding">
-            <div class="container animate-on-scroll">
-                <h2>Onde Estamos e Como Falar Conosco</h2>
-                <div class="contact-content">
+        <!-- 6. LOCALIZACAO + CONTATO Section -->
+        <section id="contato" class="contact-location-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Localização e Contato</h2>
+                <p class="animate-on-scroll">Visite-nos ou entre em contato para agendar seu serviço.</p>
+
+                <div class="grid-2-col-desktop">
                     <div class="contact-info animate-on-scroll">
-                        <h3>Informações de Contato</h3>
-                        <p>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                            R. Nove de Julho, 586 - Vila Georgina, Indaiatuba - SP, 13330-100, Brasil
-                        </p>
-                        <p>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02L6.62 10.79z"/></svg>
-                            Telefone: <a href="tel:551938342646" aria-label="Ligar para Mecânica São Paulo">55 19 3834-2646</a>
-                        </p>
-                        <p>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.477 2 2 6.477 2 12c0 3.866 2.056 7.218 5.166 9.068l.278.163c.27.159.582.25.908.25.326 0 .638-.091.908-.25l.278-.163C14.944 19.218 17 15.866 17 12c0-5.523-4.477-10-10-10zm2 14h-4v-4h4v4zm-2-6h-2v2h2v-2zm-2-2h-2v2h2v-2zm-2-2h-2v2h2v-2zM12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10S6.477 2 12 2z"/></svg>
-                            WhatsApp: <a href="https://wa.me/551938342646" target="_blank" aria-label="Enviar mensagem para Mecânica São Paulo via WhatsApp">55 19 3834-2646</a>
-                        </p>
-                        <p>
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                            Horário de Funcionamento: Seg-Sex: 8h-18h | Sáb: 8h-12h
-                        </p>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                            <span>R. Nove de Julho, 586 - Vila Georgina, Indaiatuba - SP, 13330-100, Brasil</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.47.57 3.57.11.35.03.74-.25 1.02L6.62 10.79z"/></svg>
+                            <a href="tel:+551938342646" aria-label="Ligar para a Mecânica São Paulo">+55 (19) 3834-2646</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C7.34 2 3.41 5.78 3.41 10.49c0 1.95.63 3.82 1.73 5.38L2 22l6.05-1.64c1.48.81 3.19 1.25 4.04 1.25 4.71 0 8.64-3.78 8.64-8.49S16.75 2 12.04 2zM17.3 15.68c-.2-.1-.73-.36-.84-.4c-.12-.04-.25-.05-.36.05-.12.1-.45.4-.55.49-.1.1-.2.1-.37.04s-.73-.27-.9-.33c-.17-.06-.3-.04-.4.04-.1.1-.39.4-.5 1.42-.11.92-.22 1.4-.22 1.4s-.1.12-.21.11c-.11 0-.4-.15-.84-.34-.4-.18-.95-.46-1.35-.78-.4-.32-.8-.72-1.07-1.17-.26-.45-.03-.7-.02-.8s.18-.42.24-.55c.06-.12.03-.22-.03-.33-.06-.1-.36-.87-.49-1.2C8.7 9.17 8.44 9.02 8.34 9s-.23-.05-.36-.05c-.12 0-.3.04-.45.2-.14.16-.54.53-.54 1.3c0 .77.56 1.5.64 1.6c.09.1.95 1.62 2.3 2.29.98.48 1.77.7 2.37.89.6.19 1.15.16 1.58.1.44-.06.73-.27.84-.4C17.42 16.08 17.5 15.78 17.3 15.68z"/></svg>
+                            <a href="https://wa.me/551938342646" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Mecânica São Paulo via WhatsApp">WhatsApp: +55 (19) 3834-2646</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v4h-2zm0 6h2v2h-2z"/></svg>
+                            <span>Horário: Seg-Sex: 08:00-18:00 | Sáb: 08:00-12:00</span>
+                        </div>
                     </div>
-                    <div class="map-container animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="map-container animate-on-scroll" style="animation-delay: 0.3s;">
                         <iframe
                             src="https://maps.google.com/maps?q=Mec%C3%A2nica+S%C3%A3o+Paulo+R.+Nove+de+Julho%2C+586+-+Vila+Georgina%2C+Indaiatuba+-+SP%2C+13330-100%2C+Brasil%2C+Indaiatuba+-+SP&output=embed"
                             width="600"
@@ -1173,80 +1136,96 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- 7. FOOTER Section -->
+    <footer class="main-footer">
         <div class="container footer-content">
-            <a href="#hero" class="logo" aria-label="Mecânica São Paulo - Página Inicial">Mecânica São Paulo</a>
-            <nav class="footer-nav" aria-label="Navegação do rodapé">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+            <a href="#hero" class="footer-logo" aria-label="Mecânica São Paulo - Voltar ao início">Mecânica São Paulo</a>
+            <ul class="footer-links">
+                <li><a href="#sobre" aria-label="Navegar para a seção Sobre Nós">Sobre</a></li>
+                <li><a href="#servicos" aria-label="Navegar para a seção de Serviços">Serviços</a></li>
+                <li><a href="#diferenciais" aria-label="Navegar para a seção de Diferenciais">Diferenciais</a></li>
+                <li><a href="#depoimentos" aria-label="Navegar para a seção de Depoimentos">Depoimentos</a></li>
+                <li><a href="#contato" aria-label="Navegar para a seção de Contato">Contato</a></li>
+            </ul>
             <div class="footer-info">
-                <p>R. Nove de Julho, 586 - Vila Georgina, Indaiatuba - SP, 13330-100</p>
-                <p>Telefone: <a href="tel:551938342646">55 19 3834-2646</a></p>
-                <p>&copy; 2026 Mecânica São Paulo. Todos os direitos reservados.</p>
+                <p>R. Nove de Julho, 586 - Vila Georgina,</p>
+                <p>Indaiatuba - SP, 13330-100, Brasil</p>
+                <p><a href="tel:+551938342646" aria-label="Ligar para a Mecânica São Paulo">+55 (19) 3834-2646</a></p>
             </div>
+        </div>
+        <div class="footer-copyright container">
+            <p>&copy; 2026 Mecânica São Paulo. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/551938342646" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.04 2C6.59 2 2.13 6.46 2.13 11.91C2.13 13.7 2.65 15.33 3.58 16.7L2.05 22L7.54 20.5C8.92 21.32 10.45 21.73 12.04 21.73C17.49 21.73 21.95 17.27 21.95 11.82C21.95 6.37 17.49 2 12.04 2ZM17.13 16.04C16.89 16.53 16.14 16.92 15.61 17.06C15.08 17.2 14.56 17.2 12.07 16.27C9.58 15.35 7.91 13.56 7.64 13.29C7.37 13.02 7.23 12.63 7.23 12.25C7.23 11.87 7.23 11.48 7.23 11.1C7.23 10.72 7.76 10.19 7.96 9.99C8.16 9.79 8.42 9.66 8.59 9.66C8.76 9.66 8.92 9.66 9.09 9.66C9.26 9.66 9.42 9.79 9.55 9.99C9.68 10.19 9.74 10.32 9.87 10.58C9.99 10.84 10.12 11.1 10.25 11.36C10.38 11.62 10.44 11.68 10.6 11.87C10.76 12.06 10.89 12.25 10.76 12.44C10.63 12.63 10.44 12.89 10.25 13.15C10.07 13.41 9.87 13.67 9.81 13.73C9.75 13.79 9.62 13.92 9.75 14.05C9.87 14.18 10.14 14.38 10.41 14.57C10.68 14.76 10.96 14.95 11.23 15.14C11.5 15.33 11.76 15.46 12.04 15.65C12.31 15.84 12.58 15.91 12.85 15.91C13.12 15.91 13.38 15.91 13.65 15.84C13.92 15.78 14.18 15.65 14.38 15.46C14.57 15.27 14.76 15.01 14.95 14.75C15.14 14.48 15.27 14.35 15.46 14.35C15.65 14.35 15.84 14.35 16.04 14.35C16.23 14.35 16.49 14.48 16.68 14.67C16.87 14.86 17.06 15.12 17.13 15.38C17.2 15.65 17.2 15.84 17.13 16.04Z" fill="currentColor"/>
-        </svg>
-    </a>
-
+    <!-- JavaScript for animations, smooth scroll, and mobile nav -->
     <script>
-        // JavaScript for mobile navigation toggle
         document.addEventListener('DOMContentLoaded', () => {
-            const navToggle = document.querySelector('.nav-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-
-            if (navToggle && navMenu) {
-                navToggle.addEventListener('click', () => {
-                    navMenu.classList.toggle('active');
-                    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
-                    navToggle.setAttribute('aria-expanded', !isExpanded);
-                });
-
-                // Close menu on link click (for smooth scroll)
-                navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        if (navMenu.classList.contains('active')) {
-                            navMenu.classList.remove('active');
-                            navToggle.setAttribute('aria-expanded', 'false');
-                        }
-                    });
-                });
-            }
-
-            // Intersection Observer for fade-in animation
-            const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
-            if (animateOnScrollElements.length > 0) {
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target); // Stop observing once visible
-                        }
-                    });
-                }, { threshold: 0.15 }); // Trigger when 15% of the element is visible
-
-                animateOnScrollElements.forEach(element => {
-                    observer.observe(element);
-                });
-            }
-
-            // Smooth scroll for internal links
+            // Smooth Scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
+                    // Close mobile menu if open
+                    if (document.body.classList.contains('mobile-nav-active')) {
+                        toggleMobileMenu();
+                    }
                 });
             });
+
+            // Intersection Observer for fade-in animations
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.15 // Trigger when 15% of the element is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, observerOptions);
+
+            animateElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Mobile Navigation Toggle
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileNav = document.querySelector('.nav-menu-mobile');
+            const body = document.body;
+
+            function toggleMobileMenu() {
+                hamburgerMenu.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                body.classList.toggle('mobile-nav-active'); // To prevent body scroll
+            }
+
+            hamburgerMenu.addEventListener('click', toggleMobileMenu);
+
+            // Close mobile menu when clicking outside (optional, but good UX)
+            document.addEventListener('click', (e) => {
+                if (body.classList.contains('mobile-nav-active') &&
+                    !mobileNav.contains(e.target) &&
+                    !hamburgerMenu.contains(e.target)) {
+                    toggleMobileMenu();
+                }
+            });
+
+            // Add class for mobile nav active state to body (for styling)
+            const style = document.createElement('style');
+            style.textContent = `
+                .mobile-nav-active {
+                    overflow: hidden;
+                }
+            `;
+            document.head.appendChild(style);
         });
     </script>
 </body>
