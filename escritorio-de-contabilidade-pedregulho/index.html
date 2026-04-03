@@ -18,21 +18,23 @@
     <meta property="og:description" content="Escritório de Contabilidade Pedregulho - Escritório de Contabilidade em Pedregulho, SP. Nota 5.0/5 no Google (27 avaliacoes). Agende agora pelo WhatsApp.">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Escritório de Contabilidade Pedregulho">
-    <!-- Para og:image e twitter:image, seria ideal ter uma imagem de capa do negócio. Omitindo por não ter sido fornecida. -->
+    <!-- <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO"> --> <!-- Adicionar URL de imagem real -->
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Escritório de Contabilidade Pedregulho | Escritório de Contabilidade em Pedregulho, SP">
     <meta name="twitter:description" content="Escritório de Contabilidade Pedregulho - Escritório de Contabilidade em Pedregulho, SP. Nota 5.0/5 no Google (27 avaliacoes). Agende agora pelo WhatsApp.">
+    <!-- <meta name="twitter:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO"> --> <!-- Adicionar URL de imagem real -->
 
-    <!-- Favicon inline SVG -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2314B8A6' d='M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 15h-2v-2h2v2zm0-4h-2V7h2v6zm6 0h-2V7h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Favicon SVG inline -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2314B8A6' d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 6h16v2H4V6zm16 12H4v-6h16v6zm-4-3h-4v-2h4v2z'/%3E%3C/svg%3E" type="image/svg+xml">
 
-    <!-- Preconnect for Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
 
-    <!-- Schema.org / JSON-LD LocalBusiness -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,7 +44,7 @@
       "telephone": "+5516982055205",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "R. Salim Féres, 400 - Centro",
+        "streetAddress": "R. Salim Féres, 400 - Centro, Pedregulho - SP, 14470-000, Brasil",
         "addressLocality": "Pedregulho",
         "addressRegion": "SP",
         "postalCode": "14470-000",
@@ -50,8 +52,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -20.3533475,
-        "longitude": -47.4729199
+        "latitude": -20.352495,
+        "longitude": -47.458000
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -60,40 +62,28 @@
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicos",
+        "name": "Serviços Contábeis",
         "itemListElement": [
-          { "@type": "Offer", "name": "Contabilidade Empresarial" },
-          { "@type": "Offer", "name": "Gestão Fiscal e Tributária" },
-          { "@type": "Offer", "name": "Folha de Pagamento" },
-          { "@type": "Offer", "name": "Abertura de Empresa" },
-          { "@type": "Offer", "name": "Planejamento Tributário" },
-          { "@type": "Offer", "name": "Imposto de Renda" },
-          { "@type": "Offer", "name": "Consultoria Financeira" },
-          { "@type": "Offer", "name": "BPO Financeiro" }
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Contabilidade Empresarial"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gestão Fiscal e Tributária"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Folha de Pagamento"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Abertura de Empresa"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Planejamento Tributário"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Imposto de Renda"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoria Financeira"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "BPO Financeiro"}}
         ]
       },
       "priceRange": "$$",
       "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "12:00"
-        }
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
       ],
       "sameAs": [
-        "https://www.google.com/maps/search/?api=1&query=Escrit%C3%B3rio+de+Contabilidade+Pedregulho+Pedregulho",
-        "https://wa.me/5516982055205"
+        "https://www.google.com/maps/search/?api=1&query=Escrit%C3%B3rio+de+Contabilidade+Pedregulho+Pedregulho"
       ]
     }
     </script>
-    <!-- Schema.org / JSON-LD FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -104,7 +94,7 @@
           "name": "Qual o horário de funcionamento do Escritório de Contabilidade Pedregulho?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nosso escritório atende de segunda a sexta-feira, das 08:00 às 18:00, e aos sábados, das 08:00 às 12:00."
+            "text": "Nosso escritório funciona de segunda a sexta-feira, das 8h às 18h, e aos sábados, das 8h às 12h."
           }
         },
         {
@@ -128,7 +118,7 @@
           "name": "O Escritório de Contabilidade Pedregulho atende empresas de todos os portes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, temos expertise para atender desde microempreendedores individuais (MEIs) e pequenas empresas até médias e grandes corporações, adaptando nossos serviços às suas necessidades específicas."
+            "text": "Sim, atendemos empresas de diversos portes e segmentos, desde microempreendedores individuais (MEIs) até grandes empresas, com soluções personalizadas para cada necessidade."
           }
         }
       ]
@@ -136,37 +126,34 @@
     </script>
 
     <style>
-        /* Critical CSS for immediate loading */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400&display=swap');
-
+        /* CSS Reset & Base Styles */
         :root {
-            --color-bg-dark: #0F172A;
-            --color-bg-medium: #1E293B;
-            --color-primary-accent: #14B8A6;
-            --color-secondary-accent: #2DD4BF;
-            --color-text-light: #F1F5F9;
-            --color-text-muted: #94A3B8;
-            --color-whatsapp: #25D366;
+            /* Colors */
+            --bg-dark: #0F172A;
+            --bg-darker: #1E293B;
+            --primary-teal: #14B8A6;
+            --secondary-teal: #2DD4BF;
+            --text-light: #F1F5F9;
+            --text-muted: #94A3B8;
 
+            /* Typography */
             --font-slab: 'Roboto Slab', serif;
-            --font-sans: 'Roboto', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+            --h1-size: clamp(2.2rem, 5vw, 4rem);
+            --h2-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            --h3-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            --body-size: clamp(0.95rem, 1.5vw, 1.1rem);
 
-            --spacing-unit: 8px;
+            /* Spacing */
             --section-padding-mobile: 48px 0;
             --section-padding-desktop: 80px 0;
             --card-padding-mobile: 24px;
             --card-padding-desktop: 32px;
             --card-gap: 24px;
             --container-max-width: 1200px;
-
-            /* Typography Scale with clamp for fluid sizing */
-            --h1-fluid: clamp(2.2rem, 5vw, 4rem);
-            --h2-fluid: clamp(1.6rem, 3.5vw, 2.4rem);
-            --h3-fluid: clamp(1.1rem, 2.5vw, 1.4rem);
-            --body-fluid: clamp(0.95rem, 1.5vw, 1.1rem);
+            --container-padding-x: 24px;
         }
 
-        /* Base Reset & Global Styles */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -175,71 +162,581 @@
 
         html {
             scroll-behavior: smooth;
-            font-size: 100%; /* Base for rem units, ensures responsiveness */
         }
 
         body {
-            font-family: var(--font-sans);
+            font-family: var(--font-body);
+            color: var(--text-light);
+            background-color: var(--bg-dark);
             line-height: 1.6;
-            color: var(--color-text-light);
-            background-color: var(--color-bg-dark);
-            -webkit-font-smoothing: antialiased; /* Better font rendering on macOS */
-            -moz-osx-font-smoothing: grayscale; /* Better font rendering on macOS */
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         a {
-            color: var(--color-primary-accent);
+            color: var(--primary-teal);
             text-decoration: none;
-            transition: color 0.3s ease, border-color 0.3s ease;
         }
 
         a:hover {
-            color: var(--color-secondary-accent);
+            color: var(--secondary-teal);
         }
 
-        /* Focus-visible styles for accessibility */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid var(--color-secondary-accent);
-            outline-offset: 4px;
-            border-radius: 4px;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         h1, h2, h3 {
             font-family: var(--font-slab);
-            color: var(--color-text-light);
+            color: var(--text-light);
             line-height: 1.2;
-            margin-bottom: calc(var(--spacing-unit) * 3); /* 24px */
+            margin-bottom: 0.5em;
         }
 
-        h1 { font-size: var(--h1-fluid); }
-        h2 { font-size: var(--h2-fluid); }
-        h3 { font-size: var(--h3-fluid); }
-
-        p {
-            font-size: var(--body-fluid);
-            margin-bottom: calc(var(--spacing-unit) * 2); /* 16px */
-            color: var(--color-text-light);
-        }
+        h1 { font-size: var(--h1-size); }
+        h2 { font-size: var(--h2-size); }
+        h3 { font-size: var(--h3-size); }
+        p { font-size: var(--body-size); margin-bottom: 1em; color: var(--text-muted); }
 
         .container {
             max-width: var(--container-max-width);
             margin: 0 auto;
-            padding: 0 calc(var(--spacing-unit) * 3); /* 0 24px */
+            padding: 0 var(--container-padding-x);
         }
 
         section {
             padding: var(--section-padding-mobile);
-            position: relative;
-            overflow: hidden; /* Ensures animations are contained */
         }
 
-        /* Alternating section backgrounds */
         section:nth-of-type(even) {
-            background-color: var(--color-bg-medium);
+            background-color: var(--bg-darker);
         }
 
-        /* Animation class for IntersectionObserver */
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .flex { display: flex; }
+        .grid { display: grid; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .gap-md { gap: var(--card-gap); }
+        .mb-lg { margin-bottom: 2rem; }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            background-color: var(--primary-teal);
+            color: var(--bg-dark);
+            font-family: var(--font-slab);
+            font-size: var(--body-size);
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-teal);
+            transform: translateY(-2px);
+            color: var(--bg-dark); /* Ensure text color remains dark on hover */
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--secondary-teal);
+            outline-offset: 3px;
+        }
+
+        /* Navigation */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(15, 23, 42, 0.85); /* var(--bg-dark) with opacity */
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 1rem var(--container-padding-x);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-slab);
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: none; /* Hidden by default on mobile */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-teal);
+        }
+
+        .nav-links a:focus-visible {
+            outline: 2px solid var(--secondary-teal);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        .hamburger-menu {
+            display: block; /* Visible by default on mobile */
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1100;
+        }
+
+        .hamburger-menu svg {
+            fill: var(--text-light);
+            width: 30px;
+            height: 30px;
+        }
+
+        .hamburger-menu:focus-visible {
+            outline: 3px solid var(--secondary-teal);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.95);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .nav-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-overlay .nav-links {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav-overlay .nav-links li {
+            margin: 1rem 0;
+        }
+
+        .nav-overlay .nav-links a {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #080D1A 100%); /* Elegant gradient */
+            overflow: hidden;
+            padding-top: 80px; /* Adjust for fixed header */
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(30, 41, 59, 0.4) 0%, transparent 70%);
+            z-index: 1;
+        }
+
+        #hero .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 var(--container-padding-x);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: heroFadeIn 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes heroFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #hero h1 {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-size: var(--h1-size);
+            font-weight: 700;
+        }
+
+        #hero .subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: var(--secondary-teal);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-body);
+        }
+
+        .google-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(20, 184, 166, 0.1); /* Primary teal with transparency */
+            border: 1px solid var(--primary-teal);
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+            font-size: var(--body-size);
+            font-weight: 700;
+        }
+
+        .google-badge svg {
+            fill: #FFD700; /* Gold color for stars */
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        /* About Section */
+        #sobre .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+        }
+
+        #sobre .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        #sobre .highlight-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--card-gap);
+            margin-top: 2rem;
+        }
+
+        .highlight-card {
+            background-color: var(--bg-darker);
+            border-left: 3px solid var(--primary-teal);
+            padding: var(--card-padding-mobile);
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight-card .number {
+            font-family: var(--font-slab);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: var(--primary-teal);
+            font-weight: 700;
+            margin-bottom: 0.2em;
+        }
+
+        .highlight-card .label {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: var(--text-light);
+        }
+
+        /* Services Section */
+        #servicos .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+        }
+
+        .service-card, .differential-card, .testimonial-card {
+            background-color: var(--bg-darker);
+            border-left: 3px solid var(--primary-teal);
+            padding: var(--card-padding-mobile);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card:hover, .differential-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(30, 41, 59, 0.8); /* Slightly lighter/transparent darker bg */
+        }
+
+        .service-card:focus-visible, .differential-card:focus-visible {
+            outline: 3px solid var(--secondary-teal);
+            outline-offset: 3px;
+            border-radius: 8px;
+        }
+
+        .service-card svg, .differential-card svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--secondary-teal);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3, .differential-card h3 {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p, .differential-card p {
+            color: var(--text-muted);
+            font-size: var(--body-size);
+            margin-bottom: 0;
+        }
+
+        /* Testimonials Section */
+        #depoimentos .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+        }
+
+        .testimonial-card {
+            text-align: left;
+            padding: var(--card-padding-mobile);
+        }
+
+        .testimonial-card .stars {
+            display: flex;
+            margin-bottom: 0.8rem;
+        }
+
+        .testimonial-card .stars svg {
+            fill: #FFD700;
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .testimonial-card .author {
+            font-weight: 700;
+            color: var(--primary-teal);
+            font-size: var(--body-size);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .testimonial-card .badge-google {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(20, 184, 166, 0.1);
+            border: 1px solid var(--primary-teal);
+            border-radius: 50px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .testimonial-card .badge-google svg {
+            width: 16px;
+            height: 16px;
+            fill: #4285F4; /* Google blue */
+            margin-right: 5px;
+        }
+
+        /* Location & Contact Section */
+        #contato .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--card-gap);
+        }
+
+        #contato .map-container {
+            position: relative;
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #contato .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        #contato .contact-info {
+            background-color: var(--bg-darker);
+            border-left: 3px solid var(--primary-teal);
+            padding: var(--card-padding-mobile);
+            border-radius: 8px;
+        }
+
+        #contato .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        #contato .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        #contato .contact-item svg {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            fill: var(--primary-teal);
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+
+        #contato .contact-item strong {
+            display: block;
+            color: var(--text-light);
+            font-size: var(--body-size);
+            margin-bottom: 0.2em;
+        }
+
+        #contato .contact-item span, #contato .contact-item a {
+            color: var(--text-muted);
+            font-size: var(--body-size);
+            word-break: break-word;
+        }
+
+        #contato .contact-item a:hover {
+            color: var(--secondary-teal);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-darker);
+            padding: var(--section-padding-mobile);
+            text-align: center;
+        }
+
+        .footer .footer-content {
+            border-top: 1px solid rgba(241, 245, 249, 0.1);
+            padding-top: 2rem;
+        }
+
+        .footer h3 {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer .footer-nav {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            gap: 0.5rem 1.5rem;
+        }
+
+        .footer .footer-nav a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer .footer-nav a:hover {
+            color: var(--primary-teal);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        .whatsapp-float:focus-visible {
+            outline: 3px solid var(--secondary-teal);
+            outline-offset: 3px;
+            border-radius: 50%;
+        }
+
+        .whatsapp-float svg {
+            fill: white;
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Animations for IntersectionObserver */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(30px);
@@ -251,1014 +748,408 @@
             transform: translateY(0);
         }
 
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4); /* 16px 32px */
-            background-color: var(--color-primary-accent);
-            color: var(--color-bg-dark); /* Dark text on bright button for contrast */
-            border: none;
-            border-radius: 6px;
-            font-family: var(--font-sans);
-            font-weight: 700;
-            font-size: var(--body-fluid);
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
-            text-decoration: none;
-            white-space: nowrap; /* Prevent text wrapping */
-        }
-
-        .btn:hover {
-            background-color: var(--color-secondary-accent);
-            transform: translateY(-2px);
-            color: var(--color-bg-dark); /* Ensure text remains dark */
-        }
-
-        /* Navigation */
-        .header-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(15, 23, 42, 0.85); /* 85% opacity */
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-            padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .nav-logo {
-            font-family: var(--font-slab);
-            font-size: var(--h3-fluid);
-            color: var(--color-text-light);
-            font-weight: 700;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-menu {
-            display: none; /* Hidden by default on mobile */
-            list-style: none;
-        }
-
-        .nav-menu a {
-            color: var(--color-text-light);
-            font-weight: 400;
-            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
-            display: block;
-        }
-
-        .nav-menu a:hover {
-            color: var(--color-primary-accent);
-        }
-
-        .hamburger {
-            display: flex; /* Show hamburger on mobile */
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
-            cursor: pointer;
-            position: relative;
-            z-index: 1100;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 100%;
-            height: 3px;
-            background-color: var(--color-text-light);
-            border-radius: 2px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
-
-        .nav-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.95);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            z-index: 999;
-        }
-
-        .nav-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .nav-overlay .nav-menu {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .nav-overlay .nav-menu li {
-            margin: calc(var(--spacing-unit) * 2) 0; /* 16px */
-        }
-
-        .nav-overlay .nav-menu a {
-            font-size: var(--h2-fluid);
-            padding: calc(var(--spacing-unit) * 2);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: 80px; /* Offset for fixed header */
-            background: linear-gradient(135deg, var(--color-bg-dark) 0%, #173347 50%, #0F172A 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 10% 20%, rgba(20,184,166,0.1) 0%, transparent 40%),
-                        radial-gradient(circle at 90% 80%, rgba(45,212,191,0.08) 0%, transparent 40%);
-            opacity: 0.7;
-            pointer-events: none;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            position: relative;
-            z-index: 1;
-            animation: hero-fade-in 1.2s ease-out forwards;
-            opacity: 0; /* Initial state for animation */
-        }
-
-        @keyframes hero-fade-in {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero h1 {
-            color: var(--color-text-light);
-            margin-bottom: calc(var(--spacing-unit) * 2);
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: var(--h3-fluid);
-            color: var(--color-text-muted);
-            margin-bottom: calc(var(--spacing-unit) * 4);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero .google-badge {
-            display: inline-flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
-            border-radius: 50px;
-            color: var(--color-text-light);
-            font-size: var(--body-fluid);
-            margin-bottom: calc(var(--spacing-unit) * 4);
-        }
-
-        .hero .google-badge svg {
-            width: 18px;
-            height: 18px;
-            fill: #FFD700; /* Gold star */
-            margin-right: var(--spacing-unit);
-        }
-
-        /* About Section */
-        .about-grid {
-            display: flex;
-            flex-direction: column;
-            gap: var(--card-gap);
-        }
-
-        .about-text h2 {
-            text-align: center;
-            margin-bottom: calc(var(--spacing-unit) * 4);
-        }
-
-        .about-highlights {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--card-gap);
-            margin-top: calc(var(--spacing-unit) * 6);
-        }
-
-        .highlight-card {
-            background-color: var(--color-bg-dark);
-            padding: var(--card-padding-mobile);
-            border-radius: 8px;
-            text-align: center;
-            border-left: 3px solid var(--color-primary-accent);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .highlight-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .highlight-card .number {
-            font-family: var(--font-slab);
-            font-size: var(--h2-fluid);
-            color: var(--color-secondary-accent);
-            margin-bottom: var(--spacing-unit);
-        }
-
-        .highlight-card .label {
-            font-size: var(--body-fluid);
-            color: var(--color-text-muted);
-        }
-
-        /* Services Section */
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--card-gap);
-        }
-
-        .service-card {
-            background-color: rgba(30, 41, 59, 0.7); /* Semi-transparent */
-            padding: var(--card-padding-mobile);
-            border-radius: 8px;
-            border-left: 3px solid var(--color-primary-accent);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            background-color: rgba(30, 41, 59, 0.9);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .service-card svg {
-            width: 48px;
-            height: 48px;
-            fill: var(--color-secondary-accent);
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .service-card h3 {
-            margin-bottom: var(--spacing-unit);
-            color: var(--color-text-light);
-        }
-
-        .service-card p {
-            font-size: var(--body-fluid);
-            color: var(--color-text-muted);
-            margin-bottom: 0;
-        }
-
-        /* Diferenciais Section */
-        .diferenciais-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--card-gap);
-        }
-
-        .diferencial-item {
-            background-color: rgba(15, 23, 42, 0.7); /* Semi-transparent */
-            padding: var(--card-padding-mobile);
-            border-radius: 8px;
-            border-left: 3px solid var(--color-primary-accent);
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .diferencial-item:hover {
-            transform: translateY(-5px);
-            background-color: rgba(15, 23, 42, 0.9);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .diferencial-item svg {
-            width: 56px;
-            height: 56px;
-            fill: var(--color-secondary-accent);
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .diferencial-item h3 {
-            margin-bottom: var(--spacing-unit);
-            color: var(--color-text-light);
-        }
-
-        .diferencial-item p {
-            font-size: var(--body-fluid);
-            color: var(--color-text-muted);
-            margin-bottom: 0;
-        }
-
-        /* Testimonials Section */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--card-gap);
-        }
-
-        .testimonial-card {
-            background-color: var(--color-bg-dark);
-            padding: var(--card-padding-mobile);
-            border-radius: 8px;
-            border-left: 3px solid var(--color-primary-accent);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .testimonial-card .stars {
-            display: flex;
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .testimonial-card .stars svg {
-            width: 20px;
-            height: 20px;
-            fill: #FFD700; /* Gold star */
-            margin-right: calc(var(--spacing-unit) / 2);
-        }
-
-        .testimonial-card p {
-            font-style: italic;
-            color: var(--color-text-light);
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .testimonial-card .author {
-            font-weight: 700;
-            color: var(--color-text-light);
-            margin-bottom: var(--spacing-unit);
-        }
-
-        .testimonial-card .source {
-            font-size: 0.9em;
-            color: var(--color-text-muted);
-            display: inline-flex;
-            align-items: center;
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: var(--spacing-unit) calc(var(--spacing-unit) * 1.5);
-            border-radius: 20px;
-        }
-
-        .testimonial-card .source svg {
-            width: 16px;
-            height: 16px;
-            fill: var(--color-text-muted);
-            margin-right: calc(var(--spacing-unit) / 2);
-        }
-
-        /* Location & Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--card-gap);
-        }
-
-        .map-container {
-            position: relative;
-            padding-bottom: 75%; /* 4:3 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--color-bg-medium);
-        }
-
-        .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .contact-info-card {
-            background-color: var(--color-bg-dark);
-            padding: var(--card-padding-mobile);
-            border-radius: 8px;
-            border-left: 3px solid var(--color-primary-accent);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-info-card h3 {
-            margin-bottom: calc(var(--spacing-unit) * 2);
-            color: var(--color-text-light);
-        }
-
-        .contact-info-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .contact-info-card ul li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: calc(var(--spacing-unit) * 2);
-            color: var(--color-text-light);
-            font-size: var(--body-fluid);
-        }
-
-        .contact-info-card ul li:last-child {
-            margin-bottom: 0;
-        }
-
-        .contact-info-card ul li svg {
-            width: 24px;
-            height: 24px;
-            fill: var(--color-primary-accent);
-            margin-right: calc(var(--spacing-unit) * 2);
-            flex-shrink: 0;
-        }
-
-        .contact-info-card ul li a {
-            color: var(--color-text-light);
-        }
-
-        .contact-info-card ul li a:hover {
-            color: var(--color-secondary-accent);
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--color-bg-dark);
-            color: var(--color-text-muted);
-            padding: var(--section-padding-mobile);
-            text-align: center;
-            border-top: 1px solid var(--color-bg-medium);
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            gap: calc(var(--spacing-unit) * 4);
-            align-items: center;
-        }
-
-        .footer-logo {
-            font-family: var(--font-slab);
-            font-size: var(--h3-fluid);
-            color: var(--color-text-light);
-            font-weight: 700;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .footer-nav ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: calc(var(--spacing-unit) * 2);
-            margin-bottom: calc(var(--spacing-unit) * 2);
-        }
-
-        .footer-nav a {
-            color: var(--color-text-muted);
-            font-size: var(--body-fluid);
-        }
-
-        .footer-nav a:hover {
-            color: var(--color-primary-accent);
-        }
-
-        .footer-info p {
-            margin-bottom: var(--spacing-unit);
-            font-size: 0.9em;
-            color: var(--color-text-muted);
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: calc(var(--spacing-unit) * 4); /* 32px */
-            right: calc(var(--spacing-unit) * 4); /* 32px */
-            background-color: var(--color-whatsapp);
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5em;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            z-index: 900;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background-color: #20b05b; /* Slightly darker green on hover */
-        }
-
-        .whatsapp-float svg {
-            width: 32px;
-            height: 32px;
-            fill: white;
-        }
-
-        /* Media Queries - Tablet (min-width: 600px) */
+        /* Media Queries */
         @media (min-width: 600px) {
-            .header-nav {
-                padding: var(--spacing-unit) * 3 calc(var(--spacing-unit) * 3);
+            section {
+                padding: var(--section-padding-mobile); /* Keep mobile padding, desktop takes over at 1024 */
             }
 
-            .hamburger {
-                display: none; /* Hide hamburger on tablet+ */
+            .hamburger-menu {
+                display: none;
             }
 
-            .nav-menu {
-                display: flex; /* Show nav links on tablet+ */
-                gap: calc(var(--spacing-unit) * 4); /* 32px */
-            }
-
-            .nav-menu a {
-                padding: 0; /* Remove extra padding from mobile overlay */
+            .nav-links {
+                display: flex;
+                gap: 1rem;
             }
 
             .nav-overlay {
-                display: none; /* Hide overlay on tablet+ */
+                display: none;
             }
 
-            .about-grid {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            .about-text {
-                flex: 1;
-                text-align: left;
-            }
-
-            .about-text h2 {
-                text-align: left;
-            }
-
-            .about-highlights {
-                flex: 1;
-                margin-top: 0;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .diferenciais-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .map-container {
-                padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            }
-
-            .footer-content {
-                flex-direction: row;
-                justify-content: space-between;
+            #sobre .about-grid {
+                grid-template-columns: 1fr 1fr;
                 align-items: center;
             }
-            
-            .footer-nav ul {
-                margin-bottom: 0;
+
+            #servicos .services-grid,
+            #diferenciais .services-grid,
+            #depoimentos .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .footer-info {
-                text-align: right;
+            #contato .contact-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #contato .map-container {
+                padding-bottom: 100%; /* Square map for 2-column layout */
             }
         }
 
-        /* Media Queries - Desktop (min-width: 1024px) */
         @media (min-width: 1024px) {
             section {
                 padding: var(--section-padding-desktop);
             }
 
-            .services-grid {
+            #servicos .services-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            .diferenciais-grid {
+            #diferenciais .services-grid {
                 grid-template-columns: repeat(4, 1fr);
             }
 
-            .testimonials-grid {
+            #depoimentos .testimonials-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            .about-text {
-                max-width: 60%; /* Adjust width for text next to highlights */
+            .footer .footer-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
             }
 
-            .about-highlights {
+            .footer p {
+                margin-bottom: 0;
+            }
+
+            .footer .footer-nav {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .footer .footer-info {
                 max-width: 40%;
-            }
-
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr); /* Stays 2 columns */
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navegação Fixa -->
-    <header class="header-nav" role="banner">
-        <a href="#hero" class="nav-logo" aria-label="Escritório de Contabilidade Pedregulho - Voltar ao início">Pedregulho Contabilidade</a>
-        <nav class="nav-main" aria-label="Navegação Principal">
-            <ul class="nav-menu">
-                <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
-                <li><a href="#servicos" aria-label="Ir para a seção de Serviços">Serviços</a></li>
-                <li><a href="#diferenciais" aria-label="Ir para a seção de Diferenciais">Diferenciais</a></li>
-                <li><a href="#depoimentos" aria-label="Ir para a seção de Depoimentos">Depoimentos</a></li>
-                <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger" role="button" aria-label="Abrir menu de navegação" aria-controls="nav-overlay-menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header class="header-nav">
+        <div class="container">
+            <a href="#" class="logo">Escritório Pedregulho</a>
+            <nav>
+                <button class="hamburger-menu" aria-label="Abrir menu de navegação">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+                <div class="nav-overlay" id="navOverlay">
+                    <ul class="nav-links">
+                        <li><a href="#hero" aria-label="Voltar para o início">Início</a></li>
+                        <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
+                        <li><a href="#servicos" aria-label="Ver nossos serviços">Serviços</a></li>
+                        <li><a href="#diferenciais" aria-label="Conheça nossos diferenciais">Diferenciais</a></li>
+                        <li><a href="#depoimentos" aria-label="Leia os depoimentos de clientes">Depoimentos</a></li>
+                        <li><a href="#contato" aria-label="Entre em contato conosco">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Overlay de Navegação para Mobile -->
-    <div class="nav-overlay" id="nav-overlay-menu" aria-hidden="true">
-        <nav aria-label="Menu de Navegação Mobile">
-            <ul class="nav-menu">
-                <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
-                <li><a href="#servicos" aria-label="Ir para a seção de Serviços">Serviços</a></li>
-                <li><a href="#diferenciais" aria-label="Ir para a seção de Diferenciais">Diferenciais</a></li>
-                <li><a href="#depoimentos" aria-label="Ir para a seção de Depoimentos">Depoimentos</a></li>
-                <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <main>
-        <!-- 1. HERO Section -->
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <h1 class="animate-on-scroll">Pedregulho Contabilidade Expert</h1>
-                <p class="animate-on-scroll" style="animation-delay: 0.2s;">Sua empresa em boas mãos, com precisão e confiança.</p>
-                <div class="google-badge animate-on-scroll" style="animation-delay: 0.4s;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 data-animate="true">Escritório de Contabilidade Pedregulho — Escritório de Contabilidade em Pedregulho, SP</h1>
+                <p class="subtitle" data-animate="true">Sua empresa em boas mãos.</p>
+                <div class="google-badge" data-animate="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     5.0 ★ no Google (27 avaliações)
                 </div>
-                <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="btn animate-on-scroll" aria-label="Fale com um contador especialista via WhatsApp" style="animation-delay: 0.6s;">
+                <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Fale com um contador especialista via WhatsApp" data-animate="true">
                     Fale com um contador especialista
                 </a>
             </div>
         </section>
 
-        <!-- 2. SOBRE Section -->
-        <section id="sobre" class="animate-on-scroll">
+        <section id="sobre">
             <div class="container">
+                <h2 class="text-center mb-lg" data-animate="true">Sobre o Escritório de Contabilidade Pedregulho</h2>
                 <div class="about-grid">
-                    <div class="about-text">
-                        <h2 class="animate-on-scroll">Sobre o Escritório de Contabilidade Pedregulho</h2>
-                        <p class="animate-on-scroll">Com orgulho, o Escritório de Contabilidade Pedregulho tem sido o pilar financeiro para empresas e indivíduos em Pedregulho e região. Nossa missão é ir além dos números, oferecendo soluções contábeis estratégicas que impulsionam o crescimento e a tranquilidade dos nossos clientes.</p>
-                        <p class="animate-on-scroll">Localizados na R. Salim Féres, 400 - Centro, Pedregulho - SP, 14470-000, Brasil, somos reconhecidos pela excelência, transparência e pelo compromisso inabalável com a precisão. A nota 5.0/5 no Google, baseada em 27 avaliações, reflete a confiança que construímos com cada parceiro.</p>
-                        <p class="animate-on-scroll">Nossa equipe de contadores especialistas está pronta para cuidar da sua contabilidade com a dedicação que seu negócio merece, garantindo conformidade fiscal e otimização de resultados. Escolha a segurança de quem entende de verdade do seu negócio em Pedregulho, SP.</p>
+                    <div class="about-text" data-animate="true">
+                        <p>No Escritório de Contabilidade Pedregulho, somos mais do que contadores; somos parceiros estratégicos para o sucesso do seu negócio. Com anos de experiência e uma equipe altamente qualificada, oferecemos soluções contábeis, fiscais e financeiras desenhadas para a realidade de Pedregulho e região.</p>
+                        <p>Nossa missão é simplificar a complexidade burocrática, garantindo que sua empresa esteja sempre em conformidade, otimizando seus impostos e oferecendo insights valiosos para a tomada de decisões. Estamos localizados na <strong>R. Salim Féres, 400 - Centro, Pedregulho - SP</strong>, prontos para atender você com excelência e dedicação.</p>
+                        <p>Acreditamos na transparência, na precisão e no atendimento personalizado, o que nos rendeu uma <strong>nota 5.0/5 no Google</strong> com 27 avaliações, refletindo a satisfação e a confiança de nossos clientes.</p>
                     </div>
-                    <div class="about-highlights animate-on-scroll">
-                        <div class="highlight-card animate-on-scroll">
-                            <div class="number">27+</div>
-                            <div class="label">Avaliações Positivas</div>
+                    <div class="highlight-cards" data-animate="true">
+                        <div class="highlight-card">
+                            <span class="number">27+</span>
+                            <span class="label">Avaliações Positivas</span>
                         </div>
-                        <div class="highlight-card animate-on-scroll" style="animation-delay: 0.1s;">
-                            <div class="number">5.0/5</div>
-                            <div class="label">Nota Máxima no Google</div>
+                        <div class="highlight-card">
+                            <span class="number">5.0/5</span>
+                            <span class="label">Nota no Google</span>
                         </div>
-                        <div class="highlight-card animate-on-scroll" style="animation-delay: 0.2s;">
-                            <div class="number">15+</div>
-                            <div class="label">Anos de Experiência</div>
+                        <div class="highlight-card">
+                            <span class="number">15+</span>
+                            <span class="label">Anos de Experiência</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. SERVICOS Section -->
-        <section id="servicos" class="animate-on-scroll">
+        <section id="servicos">
             <div class="container">
-                <h2 class="text-center animate-on-scroll">Nossos Serviços de Contabilidade em Pedregulho, SP</h2>
-                <div class="services-grid">
-                    <div class="service-card animate-on-scroll">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 15h-2v-2h2v2zm0-4h-2V7h2v6zm6 0h-2V7h2v6z"/></svg>
-                        <h3>Contabilidade Empresarial</h3>
-                        <p>Gerenciamento completo das operações contábeis para a saúde financeira da sua empresa em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v8l-6 6-6 4zm10-8V4H4v14h6v-4c0-1.1.9-2 2-2h8z"/></svg>
-                        <h3>Gestão Fiscal e Tributária</h3>
-                        <p>Otimização fiscal e cumprimento rigoroso das obrigações tributárias para sua empresa em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12zM9 10h6v2H9v-2z"/></svg>
-                        <h3>Folha de Pagamento</h3>
-                        <p>Processamento eficiente e seguro da folha de pagamento, garantindo conformidade trabalhista em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.3s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 10H2V4h12v6zm-2-4H4v4h8V6zm8 14H10v-6h12v6zm-2-4h-8v4h8v-4zM2 16h6v4H2v-4zm16-6h-2V7h-2V5h2V2h2v3h3v2h-3z"/></svg>
-                        <h3>Abertura de Empresa</h3>
-                        <p>Assessoria completa para o processo de abertura da sua empresa, do CNPJ à regularização em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.4s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                        <h3>Planejamento Tributário</h3>
-                        <p>Estratégias para reduzir legalmente sua carga tributária e aumentar a lucratividade em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.5s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                        <h3>Imposto de Renda</h3>
-                        <p>Elaboração e entrega da declaração de Imposto de Renda, garantindo precisão e evitando problemas com a Receita Federal em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.6s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                        <h3>Consultoria Financeira</h3>
-                        <p>Orientação estratégica para otimizar suas finanças pessoais ou empresariais, visando crescimento e estabilidade em Pedregulho, SP.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.7s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                        <h3>BPO Financeiro</h3>
-                        <p>Terceirização da gestão financeira para que você foque no core do seu negócio, com suporte especializado em Pedregulho, SP.</p>
-                    </div>
+                <h2 class="text-center mb-lg" data-animate="true">Nossos Serviços Contábeis</h2>
+                <div class="services-grid gap-md">
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Contabilidade Empresarial em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 6h16v2H4V6zm16 12H4v-6h16v6zm-4-3h-4v-2h4v2z"/></svg>
+                        <h3>Contabilidade Empresarial em Pedregulho, SP</h3>
+                        <p>Organizamos e analisamos as finanças da sua empresa para decisões mais inteligentes.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Gestão Fiscal e Tributária em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M10 20H8V4h2v16zm6-16h-2v16h2V4zm-4 0h-2v16h2V4z"/></svg>
+                        <h3>Gestão Fiscal e Tributária em Pedregulho, SP</h3>
+                        <p>Garantimos a conformidade fiscal e buscamos a otimização tributária para seu negócio.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Folha de Pagamento em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6-2h-4v2h4V4z"/></svg>
+                        <h3>Folha de Pagamento em Pedregulho, SP</h3>
+                        <p>Processamento preciso da folha, encargos e obrigações trabalhistas.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Abertura de Empresa em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.2 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"/></svg>
+                        <h3>Abertura de Empresa em Pedregulho, SP</h3>
+                        <p>Desburocratizamos o processo de legalização para você iniciar seu negócio.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Planejamento Tributário em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        <h3>Planejamento Tributário em Pedregulho, SP</h3>
+                        <p>Estratégias para reduzir legalmente sua carga tributária e aumentar lucros.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Imposto de Renda em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M13 14H9V10h4v4zm0-6H9V4h4v4zm6 6H15V4h4v10zm-6 6H9v-4h4v4zm6 0H15v-4h4v4zM7 16H3v-4h4v4zm0-6H3V4h4v6z"/></svg>
+                        <h3>Imposto de Renda em Pedregulho, SP</h3>
+                        <p>Elaboração e entrega da declaração com máxima precisão e segurança.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre Consultoria Financeira em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <h3>Consultoria Financeira em Pedregulho, SP</h3>
+                        <p>Análise e orientação para uma gestão financeira eficiente e sustentável.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="service-card animate-on-scroll" aria-label="Saiba mais sobre BPO Financeiro em Pedregulho, SP">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <h3>BPO Financeiro em Pedregulho, SP</h3>
+                        <p>Terceirização de processos financeiros para focar no core do seu negócio.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 4. DIFERENCIAIS Section -->
-        <section id="diferenciais" class="animate-on-scroll">
+        <section id="diferenciais">
             <div class="container">
-                <h2 class="text-center animate-on-scroll">Por Que Escolher a Contabilidade Pedregulho?</h2>
-                <div class="diferenciais-grid">
-                    <div class="diferencial-item animate-on-scroll">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
-                        <h3>Segurança e Conformidade</h3>
-                        <p>Garantimos total aderência às leis e regulamentações, protegendo seu patrimônio.</p>
-                    </div>
-                    <div class="diferencial-item animate-on-scroll" style="animation-delay: 0.1s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12zM9 10h6v2H9v-2z"/></svg>
-                        <h3>Tecnologia Avançada</h3>
-                        <p>Utilizamos sistemas contábeis modernos para eficiência e precisão nos dados.</p>
-                    </div>
-                    <div class="diferencial-item animate-on-scroll" style="animation-delay: 0.2s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                        <h3>Atendimento Proativo</h3>
-                        <p>Antecipamos suas necessidades, oferecendo soluções antes mesmo que surjam problemas.</p>
-                    </div>
-                    <div class="diferencial-item animate-on-scroll" style="animation-delay: 0.3s;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                        <h3>Consultoria Estratégica</h3>
-                        <p>Nossa expertise vai além do básico, auxiliando na tomada de decisões inteligentes.</p>
-                    </div>
+                <h2 class="text-center mb-lg" data-animate="true">Por Que Escolher o Escritório Pedregulho?</h2>
+                <div class="services-grid gap-md">
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="differential-card animate-on-scroll" aria-label="Conheça nosso Diferencial: Especialização Setorial">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <h3>Especialização Setorial</h3>
+                        <p>Conhecimento aprofundado nas particularidades do seu ramo de atuação.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="differential-card animate-on-scroll" aria-label="Conheça nosso Diferencial: Tecnologia Contábil Avançada">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zm-2-8h-2V7h-4v3h-2V7H6v5h2v-3h4v3h2v-3h2v5z"/></svg>
+                        <h3>Tecnologia Contábil Avançada</h3>
+                        <p>Utilizamos softwares e plataformas modernas para eficiência e segurança.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="differential-card animate-on-scroll" aria-label="Conheça nosso Diferencial: Atendimento Proativo e Consultivo">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                        <h3>Atendimento Proativo e Consultivo</h3>
+                        <p>Vamos além dos números, oferecendo insights para o crescimento do seu negócio.</p>
+                    </a>
+                    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="differential-card animate-on-scroll" aria-label="Conheça nosso Diferencial: Transparência e Conformidade">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h-2V15h2v2h-2v-2H9v-2h3v-2h-3V8h3v3.99z"/></svg>
+                        <h3>Transparência e Conformidade</h3>
+                        <p>Segurança jurídica e fiscal, com clareza em todos os processos e relatórios.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- 5. DEPOIMENTOS Section -->
-        <section id="depoimentos" class="animate-on-scroll">
+        <section id="depoimentos">
             <div class="container">
-                <h2 class="text-center animate-on-scroll">O Que Nossos Clientes Dizem</h2>
-                <div class="testimonials-grid">
+                <h2 class="text-center mb-lg" data-animate="true">O Que Nossos Clientes Dizem</h2>
+                <div class="testimonials-grid gap-md">
                     <div class="testimonial-card animate-on-scroll">
                         <div class="stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
-                        <p>"Excelente atendimento! A equipe do Escritório de Contabilidade Pedregulho é extremamente competente e atenciosa. Ajudaram muito na gestão fiscal da minha loja. Recomendo!"</p>
-                        <div class="author">Ana Paula Ferreira</div>
-                        <div class="source">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2v2h2v3h-3v6.95c5.02-.5 9-4.78 9-9.95z"/></svg>
+                        <p>"Excelente escritório! A equipe é super atenciosa e resolveu todas as minhas questões de Imposto de Renda com muita agilidade e clareza. Recomendo o Escritório de Contabilidade Pedregulho!"</p>
+                        <span class="author">— Ana Paula S., Empresária</span>
+                        <span class="badge-google">
+                            <svg viewBox="0 0 24 24"><path d="M22.54 11.23h-0.03c-.15-.75-.54-1.42-1.07-1.92L19.5 7.42l-1.41 1.41 1.96 1.96c.26.26.43.59.5.95h-9.98c0-.75.29-1.46.8-1.99L12 7.42l-1.41-1.41-2.9 2.9C6.88 9.39 6.5 10.06 6.35 10.81H4.54v2.46h1.81c.15.75.54 1.42 1.07 1.92l2.03 2.03 1.41-1.41-1.96-1.96c-.26-.26-.43-.59-.5-.95h9.98c0 .75-.29 1.46-.8 1.99l-2.03 2.03 1.41 1.41 2.9-2.9c.59-.59.94-1.39 1.07-2.23h1.81v-2.46z"/></svg>
                             Avaliação do Google
-                        </div>
+                        </span>
                     </div>
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="testimonial-card animate-on-scroll">
                         <div class="stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
-                        <p>"Estava com dificuldades na abertura da minha MEI e eles resolveram tudo rapidamente. Profissionalismo e clareza nas explicações. Super recomendo para quem busca contabilidade em Pedregulho!"</p>
-                        <div class="author">João Carlos Silva</div>
-                        <div class="source">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2v2h2v3h-3v6.95c5.02-.5 9-4.78 9-9.95z"/></svg>
+                        <p>"Contratamos para a abertura da nossa empresa e o processo foi impecável. Todo o suporte fiscal e contábil que precisamos está sendo dado com muita competência. Profissionalismo total!"</p>
+                        <span class="author">— Marcos V. L., Empreendedor</span>
+                        <span class="badge-google">
+                            <svg viewBox="0 0 24 24"><path d="M22.54 11.23h-0.03c-.15-.75-.54-1.42-1.07-1.92L19.5 7.42l-1.41 1.41 1.96 1.96c.26.26.43.59.5.95h-9.98c0-.75.29-1.46.8-1.99L12 7.42l-1.41-1.41-2.9 2.9C6.88 9.39 6.5 10.06 6.35 10.81H4.54v2.46h1.81c.15.75.54 1.42 1.07 1.92l2.03 2.03 1.41-1.41-1.96-1.96c-.26-.26-.43-.59-.5-.95h9.98c0 .75-.29 1.46-.8 1.99l-2.03 2.03 1.41 1.41 2.9-2.9c.59-.59.94-1.39 1.07-2.23h1.81v-2.46z"/></svg>
                             Avaliação do Google
-                        </div>
+                        </span>
                     </div>
-                    <div class="testimonial-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="testimonial-card animate-on-scroll">
                         <div class="stars">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
-                        <p>"A consultoria financeira que recebi foi um divisor de águas para a minha empresa. O Escritório Pedregulho oferece um suporte que realmente faz a diferença. Contabilidade de alto nível!"</p>
-                        <div class="author">Mariana Lemos</div>
-                        <div class="source">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2v2h2v3h-3v6.95c5.02-.5 9-4.78 9-9.95z"/></svg>
+                        <p>"A gestão fiscal da minha empresa melhorou significativamente após o Escritório Pedregulho assumir. Eles são proativos e sempre nos mantêm atualizados sobre as melhores práticas tributárias. Confiança total!"</p>
+                        <span class="author">— Carla Mendes, Gerente Financeira</span>
+                        <span class="badge-google">
+                            <svg viewBox="0 0 24 24"><path d="M22.54 11.23h-0.03c-.15-.75-.54-1.42-1.07-1.92L19.5 7.42l-1.41 1.41 1.96 1.96c.26.26.43.59.5.95h-9.98c0-.75.29-1.46.8-1.99L12 7.42l-1.41-1.41-2.9 2.9C6.88 9.39 6.5 10.06 6.35 10.81H4.54v2.46h1.81c.15.75.54 1.42 1.07 1.92l2.03 2.03 1.41-1.41-1.96-1.96c-.26-.26-.43-.59-.5-.95h9.98c0 .75-.29 1.46-.8 1.99l-2.03 2.03 1.41 1.41 2.9-2.9c.59-.59.94-1.39 1.07-2.23h1.81v-2.46z"/></svg>
                             Avaliação do Google
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. LOCALIZACAO + CONTATO Section -->
-        <section id="contato" class="animate-on-scroll">
+        <section id="contato">
             <div class="container">
-                <h2 class="text-center animate-on-scroll">Localização e Contato</h2>
-                <div class="contact-grid">
+                <h2 class="text-center mb-lg" data-animate="true">Localização e Contato</h2>
+                <div class="contact-content gap-md">
                     <div class="map-container animate-on-scroll">
-                        <iframe
-                            src="https://maps.google.com/maps?q=Escrit%C3%B3rio+de+Contabilidade+Pedregulho+R.+Salim+F%C3%A9res%2C+400+-+Centro%2C+Pedregulho+-+SP%2C+14470-000%2C+Brasil%2C+Pedregulho+-+SP&output=embed"
-                            width="600"
-                            height="450"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Localização de Escritório de Contabilidade Pedregulho em Pedregulho, SP">
-                        </iframe>
+                        <iframe src="https://maps.google.com/maps?q=Escrit%C3%B3rio+de+Contabilidade+Pedregulho+R.+Salim+F%C3%A9res%2C+400+-+Centro%2C+Pedregulho+-+SP%2C+14470-000%2C+Brasil%2C+Pedregulho+-+SP&output=embed" loading="lazy" title="Localização de Escritório de Contabilidade Pedregulho em Pedregulho, SP" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="contact-info-card animate-on-scroll">
-                        <h3>Fale Conosco</h3>
-                        <ul>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-                                <p>R. Salim Féres, 400 - Centro, Pedregulho - SP, 14470-000, Brasil</p>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.47.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                                <p><a href="tel:+5516982055205" aria-label="Ligue para o Escritório de Contabilidade Pedregulho">(16) 98205-5205</a></p>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.009 16.918c-.012.012-.019.027-.03.04l-1 4a.999.999 0 001.21 1.21l4-1c.013-.01.028-.018.04-.03L17.2 7.03 14.97 4.8zM20.24 3.76l-2.03-2.03a1.001 1.001 0 00-1.42 0l-1.03 1.03 2.45 2.45 1.03-1.03a1.001 1.001 0 000-1.42z"/></svg>
-                                <p><a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" aria-label="Envie uma mensagem via WhatsApp">(16) 98205-5205 - WhatsApp</a></p>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
-                                <p><strong>Horário de Funcionamento:</strong><br>Segunda a Sexta: 08:00 - 18:00<br>Sábado: 08:00 - 12:00</p>
-                            </li>
-                        </ul>
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>R. Salim Féres, 400 - Centro, Pedregulho - SP, 14470-000, Brasil</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.76-.24 1.03L6.62 10.79z"/></svg>
+                            <div>
+                                <strong>Telefone</strong>
+                                <a href="tel:+5516982055205" aria-label="Ligue para Escritório de Contabilidade Pedregulho">(16) 98205-5205</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10zm-4-10h-2v2h2V8zm-3 0h-2v2h2V8zm-3 0H8v2h2V8z"/></svg>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                <span>Seg-Sex: 08:00 - 18:00</span>
+                                <span>Sáb: 08:00 - 12:00</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Entre em contato via WhatsApp agora">
+                            Fale Conosco via WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 7. FOOTER Section -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container footer-content">
-            <a href="#hero" class="footer-logo" aria-label="Escritório de Contabilidade Pedregulho - Voltar ao início">Pedregulho Contabilidade</a>
-            <nav class="footer-nav" aria-label="Navegação do Rodapé">
-                <ul>
-                    <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
-                    <li><a href="#servicos" aria-label="Ir para a seção de Serviços">Serviços</a></li>
-                    <li><a href="#diferenciais" aria-label="Ir para a seção de Diferenciais">Diferenciais</a></li>
-                    <li><a href="#depoimentos" aria-label="Ir para a seção de Depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
-                </ul>
-            </nav>
             <div class="footer-info">
-                <p>Escritório de Contabilidade Pedregulho</p>
+                <h3>Escritório de Contabilidade Pedregulho</h3>
                 <p>R. Salim Féres, 400 - Centro, Pedregulho - SP, 14470-000, Brasil</p>
-                <p>Telefone: <a href="tel:+5516982055205" aria-label="Ligue para o Escritório de Contabilidade Pedregulho">(16) 98205-5205</a></p>
-                <p>&copy; 2026 Escritório de Contabilidade Pedregulho. Todos os direitos reservados.</p>
+                <p>Telefone: <a href="tel:+5516982055205" aria-label="Ligue para Escritório de Contabilidade Pedregulho">(16) 98205-5205</a></p>
             </div>
+            <ul class="footer-nav">
+                <li><a href="#hero" aria-label="Voltar para o início">Início</a></li>
+                <li><a href="#sobre" aria-label="Ir para a seção Sobre Nós">Sobre</a></li>
+                <li><a href="#servicos" aria-label="Ver nossos serviços">Serviços</a></li>
+                <li><a href="#contato" aria-label="Entre em contato conosco">Contato</a></li>
+            </ul>
+            <p>&copy; 2026 Escritório de Contabilidade Pedregulho. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5516982055205" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.04 2.11c-5.49 0-9.94 4.45-9.94 9.94 0 1.75.46 3.44 1.34 4.93L2.05 22l5.03-1.32c1.44.79 3.08 1.25 4.96 1.25 5.49 0 9.94-4.45 9.94-9.94S17.53 2.11 12.04 2.11zm3.87 14.16c-.19.31-.76.35-1.04.2.1-.14-.26-.8-.36-.93-.16-.2-.3-.23-.5-.2-.2.03-.49.2-.67.36-.18.16-.36.33-.7.49-.34.16-.69.25-1.04.25-.36 0-.69-.12-1.01-.36-.32-.25-.97-.57-1.28-1.48-.31-.91-.25-1.39-.17-1.54.08-.15.19-.24.31-.36.12-.12.26-.2.35-.29.1-.11.05-.2-.04-.26-.09-.07-.5-.16-.67-.2-.18-.04-.36-.12-.49-.12-.13 0-.29.04-.42.16-.13.12-.5.49-.5 1.21s.52 1.4.61 1.5c.09.1.91 1.47 2.22 2.07 1.3.6 1.3.44 1.54.44.24 0 .99-.39 1.15-.49.17-.11.27-.19.39-.29.12-.11.25-.26.37-.4.13-.15.22-.24.36-.36.14-.13.25-.11.36-.08.11.03.73.34 1.28.6.55.26.96.4.96.69 0 .28-.15.4-.3.51z"/></svg>
+    <a href="https://wa.me/5516982055205" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Escritório de Contabilidade Pedregulho via WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.5 3.42 1.46 4.91L2 22l5.25-1.38c1.41.77 2.99 1.17 4.79 1.17 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm3.39 14.28c-.22-.11-.95-.46-1.1-.51-.15-.05-.28-.07-.4.07-.12.15-.46.51-.59.61-.13.1-.27.12-.5.06-.24-.06-1.03-.38-1.96-1.21-.73-.64-1.22-1.44-1.36-1.68-.14-.23-.01-.36.1-.47.09-.09.2-.23.3-.34.09-.1.12-.18.18-.3.06-.12.03-.23-.01-.34-.04-.1-.4-.95-.55-1.3-.15-.34-.3-.29-.4-.29-.11 0-.24-.04-.37-.04-.13 0-.34.04-.52.24-.18.2-.69.67-.69 1.63 0 .96.71 1.89.81 2.01.1.13 1.39 2.13 3.38 2.92.47.19.84.3 1.13.39.3.09.77.08 1.06.05.32-.04.95-.39 1.09-.73.14-.34.14-.63.1-.73-.04-.1-.15-.15-.3-.22z"/></svg>
     </a>
 
-    <!-- JavaScript para Navegação e Animações -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.querySelector('.hamburger');
-            const navOverlay = document.getElementById('nav-overlay-menu');
-            const navLinks = navOverlay.querySelectorAll('.nav-menu a');
-            const headerNav = document.querySelector('.header-nav');
+            // Hamburger menu functionality
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navOverlay = document.getElementById('navOverlay');
+            const navLinks = document.querySelector('.nav-overlay .nav-links');
 
-            // Toggle mobile navigation
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navOverlay.classList.toggle('active');
-                document.body.style.overflow = navOverlay.classList.contains('active') ? 'hidden' : '';
-                hamburger.setAttribute('aria-expanded', navOverlay.classList.contains('active'));
-                navOverlay.setAttribute('aria-hidden', !navOverlay.classList.contains('active'));
+            hamburgerMenu.addEventListener('click', () => {
+                navOverlay.classList.toggle('open');
+                hamburgerMenu.setAttribute('aria-expanded', navOverlay.classList.contains('open'));
             });
 
-            // Close mobile navigation when a link is clicked
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navOverlay.classList.remove('active');
-                    document.body.style.overflow = '';
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    navOverlay.setAttribute('aria-hidden', 'true');
-                });
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    navOverlay.classList.remove('open');
+                    hamburgerMenu.setAttribute('aria-expanded', false);
+                }
             });
 
-            // Smooth scroll for all internal links
+            // Smooth scroll for internal links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        const offsetTop = targetElement.offsetTop - headerNav.offsetHeight; // Adjust for fixed header
+                        const headerOffset = document.querySelector('.header-nav').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerOffset;
+
                         window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
+                            top: offsetPosition,
+                            behavior: "smooth"
                         });
                     }
                 });
             });
 
-            // Intersection Observer for scroll animations
-            const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+            // Intersection Observer for fade-in animations
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+
             const observerOptions = {
-                root: null, // viewport
+                root: null,
                 rootMargin: '0px',
-                threshold: 0.15 // Trigger when 15% of the item is visible
+                threshold: 0.15
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target); // Stop observing once animated
+                        observer.unobserve(entry.target); // Stop observing once visible
                     }
                 });
             }, observerOptions);
 
-            animateOnScrollElements.forEach(el => {
-                // Skip hero section elements as they have a separate initial animation
-                if (!el.closest('.hero')) {
-                    observer.observe(el);
-                }
+            animateElements.forEach(element => {
+                observer.observe(element);
             });
+
+            // Hero content animation (separate for initial load)
+            const heroContent = document.querySelector('#hero .hero-content');
+            if (heroContent) {
+                heroContent.style.opacity = '0';
+                heroContent.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    heroContent.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+                    heroContent.style.opacity = '1';
+                    heroContent.style.transform = 'translateY(0)';
+                }, 100); // Small delay to ensure CSS transition applies
+            }
         });
     </script>
 </body>
