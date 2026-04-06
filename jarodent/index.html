@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta Tags Essenciais para SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaroDent | None em SP</title>
+    <meta name="description" content="JaroDent - Soluções Essenciais em None em SP. Qualidade, confiança e resultados para o seu negócio. Agende agora pelo WhatsApp.">
+    <meta name="keywords" content="None em SP, servico principal de none, consultoria em none, atendimento especializado em none, projetos e planejamento de none, manutenção e suporte em none, None SP, JaroDent">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="author" content="JaroDent">
+    <meta name="geo.region" content="BR-SP">
+    <link rel="canonical" href="https://www.jarodent.com.br/">
+
+    <!-- Open Graph / Twitter Cards para Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JaroDent | None em SP">
+    <meta property="og:description" content="JaroDent - Soluções Essenciais em None em SP. Qualidade, confiança e resultados para o seu negócio. Agende agora pelo WhatsApp.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="JaroDent">
+    <meta property="og:url" content="https://www.jarodent.com.br/">
+    <meta property="og:image" content="https://www.jarodent.com.br/social-share.jpg"> <!-- Placeholder para imagem de compartilhamento -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JaroDent | None em SP">
+    <meta name="twitter:description" content="JaroDent - Soluções Essenciais em None em SP. Qualidade, confiança e resultados para o seu negócio. Agende agora pelo WhatsApp.">
+    <meta name="twitter:image" content="https://www.jarodent.com.br/social-share.jpg"> <!-- Placeholder para imagem de compartilhamento -->
+
+    <!-- Favicon SVG Inline -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232563EB' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-1 15H9V9h2v8zm4 0h-2V9h2v8z'/%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Preconnect para Google Fonts e importação -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Inline - Critical CSS e Estilos Globais -->
+    <style>
+        :root {
+            /* Paleta de Cores */
+            --color-background: #FFFFFF;
+            --color-background-alt: #F5F7FA;
+            --color-primary: #2563EB;
+            --color-primary-hover: #3B82F6;
+            --color-text-dark: #1E293B;
+            --color-text-light: #64748B;
+            --color-whatsapp: #25D366;
+            --color-whatsapp-hover: #1DA851;
+            --color-white: #FFFFFF;
+            --color-shadow: rgba(0, 0, 0, 0.08);
+            --color-shadow-light: rgba(0, 0, 0, 0.04);
+
+            /* Tipografia */
+            --font-family-base: 'Inter', sans-serif;
+            --font-weight-body: 400;
+            --font-weight-heading: 700;
+
+            /* Spacing System (8px grid) */
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
+            --spacing-xxl: 80px;
+
+            /* Border Radius */
+            --border-radius-sm: 8px;
+            --border-radius-md: 12px;
+            --border-radius-lg: 16px;
+        }
+
+        /* Reset Básico */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            font-family: var(--font-family-base);
+            line-height: 1.6;
+            color: var(--color-text-dark);
+        }
+
+        body {
+            background-color: var(--color-background);
+            font-weight: var(--font-weight-body);
+            overflow-x: hidden; /* Previne scroll horizontal */
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-primary-hover);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Tipografia Fluida (clamp) */
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-weight: var(--font-weight-heading);
+            line-height: 1.1;
+            color: var(--color-text-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: var(--font-weight-heading);
+            line-height: 1.2;
+            color: var(--color-text-dark);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+        }
+
+        h3 {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: var(--font-weight-heading);
+            line-height: 1.3;
+            color: var(--color-text-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        p {
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Foco Visível para Acessibilidade */
+        :focus-visible {
+            outline: 3px solid var(--color-primary-hover);
+            outline-offset: 2px;
+            border-radius: var(--border-radius-sm);
+        }
+
+        /* Utilitários de Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md); /* 24px */
+        }
+
+        .section-padding {
+            padding: var(--spacing-xl) 0; /* 48px 0 para mobile */
+        }
+
+        .bg-alt {
+            background-color: var(--color-background-alt);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .text-light {
+            color: var(--color-text-light);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-lg); /* 16px 32px */
+            border-radius: var(--border-radius-sm);
+            font-weight: var(--font-weight-heading);
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+        }
+
+        .button-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .button-primary:hover {
+            background-color: var(--color-primary-hover);
+        }
+
+        .button-whatsapp {
+            background-color: var(--color-whatsapp);
+            color: var(--color-white);
+        }
+
+        .button-whatsapp:hover {
+            background-color: var(--color-whatsapp-hover);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 10px var(--color-shadow-light);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+            font-weight: var(--font-weight-heading);
+            color: var(--color-text-dark);
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: none; /* Oculto por padrão em mobile */
+            list-style: none;
+            gap: var(--spacing-lg);
+        }
+
+        .navbar-links a {
+            color: var(--color-text-dark);
+            font-weight: var(--font-weight-heading);
+            padding: var(--spacing-xs) 0;
+            position: relative;
+        }
+
+        .navbar-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: width 0.3s ease;
+        }
+
+        .navbar-links a:hover::after,
+        .navbar-links a:focus-visible::after {
+            width: 100%;
+        }
+
+        .hamburger-menu {
+            display: flex; /* Visível em mobile */
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            z-index: 1001;
+            position: relative;
+        }
+
+        .hamburger-menu span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--color-text-dark);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-menu.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-menu.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(100%);
+            transition: transform 0.4s ease-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .mobile-nav-overlay.active {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav-overlay .navbar-links {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: var(--spacing-lg);
+        }
+        .mobile-nav-overlay .navbar-links a {
+            font-size: clamp(1.4rem, 5vw, 2rem);
+            padding: var(--spacing-sm) 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--color-primary) 0%, #0c4a92 100%);
+            animation: heroGradientShift 15s ease infinite alternate;
+        }
+
+        @keyframes heroGradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: var(--spacing-md);
+            opacity: 0; /* Para animação de entrada */
+            transform: translateY(20px); /* Para animação de entrada */
+            animation: fadeInHero 1s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+        .hero-content h1, .hero-content p, .hero-content .button {
+             color: var(--color-white);
+             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeInHero {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-white);
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-white);
+        }
+
+        .google-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-sm);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-size: clamp(0.85rem, 1.2vw, 1rem);
+            color: var(--color-white);
+            gap: 4px;
+        }
+        .google-badge svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--color-white);
+        }
+
+        /* Cards Genéricos */
+        .card {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-md); /* 24px mobile */
+            box-shadow: 0 4px 15px var(--color-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-icon {
+            margin: 0 auto var(--spacing-sm);
+            width: 48px;
+            height: 48px;
+            color: var(--color-primary);
+        }
+        .card-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        /* Sobre Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        .about-text {
+            max-width: 700px;
+            text-align: center;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        .stat-card {
+            padding: var(--spacing-md);
+            background-color: var(--color-background-alt);
+            border-radius: var(--border-radius-sm);
+            text-align: center;
+        }
+        .stat-card strong {
+            display: block;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: var(--font-weight-heading);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        .stat-card span {
+            font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+            color: var(--color-text-dark);
+        }
+
+        /* Serviços Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md); /* 24px */
+            margin-top: var(--spacing-lg);
+        }
+        .service-card {
+            padding: var(--spacing-md); /* 24px mobile */
+        }
+        .service-card h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* Diferenciais Section */
+        .differentiators-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md); /* 24px */
+            margin-top: var(--spacing-lg);
+        }
+        .differentiator-card {
+            padding: var(--spacing-md); /* 24px mobile */
+        }
+
+        /* Depoimentos Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md); /* 24px */
+            margin-top: var(--spacing-lg);
+        }
+        .testimonial-card {
+            padding: var(--spacing-md); /* 24px mobile */
+            text-align: left;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-text-dark);
+        }
+        .testimonial-author {
+            font-weight: var(--font-weight-heading);
+            color: var(--color-text-dark);
+            margin-bottom: var(--spacing-xs);
+        }
+        .testimonial-rating {
+            display: flex;
+            gap: 4px;
+            margin-bottom: var(--spacing-xs);
+        }
+        .testimonial-rating svg {
+            width: 18px;
+            height: 18px;
+            fill: #FFD700; /* Gold color for stars */
+        }
+        .testimonial-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--color-background-alt);
+            border-radius: var(--border-radius-sm);
+            padding: 4px var(--spacing-xs);
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            gap: 4px;
+        }
+        .testimonial-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--color-text-light);
+        }
+
+        /* Contato Section */
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: var(--color-text-dark);
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            justify-content: center;
+        }
+        .contact-item svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-primary);
+        }
+        .contact-item a {
+            color: var(--color-text-dark);
+            word-break: break-all; /* Para quebrar URLs longas */
+        }
+        .contact-item a:hover {
+            color: var(--color-primary-hover);
+            text-decoration: underline;
+        }
+
+        .google-maps {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: var(--border-radius-md);
+            box-shadow: 0 4px 15px var(--color-shadow);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--color-text-dark);
+            color: var(--color-white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        .footer-nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-md);
+        }
+        .footer-nav-links a {
+            color: var(--color-white);
+            font-weight: var(--font-weight-heading);
+        }
+        .footer-nav-links a:hover {
+            color: var(--color-primary-hover);
+        }
+        .footer-info p {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-xs);
+            font-size: inherit;
+        }
+        .footer-info a {
+            color: var(--color-white);
+        }
+
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-float-button {
+            position: fixed;
+            bottom: var(--spacing-lg);
+            right: var(--spacing-lg);
+            background-color: var(--color-whatsapp);
+            color: var(--color-white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 999;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .whatsapp-float-button:hover {
+            background-color: var(--color-whatsapp-hover);
+            transform: scale(1.05);
+        }
+        .whatsapp-float-button svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--color-white);
+        }
+
+        /* Animação Fade-in com IntersectionObserver */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Media Queries - Tablet (min-width: 600px) */
+        @media (min-width: 600px) {
+            .section-padding {
+                padding: var(--spacing-xxl) 0; /* 80px 0 para desktop */
+            }
+
+            .container {
+                padding: 0 var(--spacing-lg); /* 32px */
+            }
+
+            .about-content {
+                flex-direction: row;
+                text-align: left;
+                align-items: flex-start;
+            }
+            .about-text {
+                text-align: left;
+                max-width: none;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--spacing-lg);
+            }
+            .stat-card {
+                padding: var(--spacing-lg);
+            }
+
+            .services-grid,
+            .differentiators-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .card {
+                padding: var(--spacing-lg); /* 32px desktop */
+            }
+
+            .contact-content {
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: left;
+            }
+            .contact-info {
+                align-items: flex-start;
+                text-align: left;
+            }
+            .contact-item {
+                justify-content: flex-start;
+            }
+        }
+
+        /* Media Queries - Desktop (min-width: 1024px) */
+        @media (min-width: 1024px) {
+            .navbar-links {
+                display: flex; /* Visível em desktop */
+            }
+            .hamburger-menu {
+                display: none; /* Oculto em desktop */
+            }
+            .mobile-nav-overlay {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .differentiators-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .about-content {
+                flex-direction: column; /* Volta para coluna para texto centralizado */
+                align-items: center;
+            }
+            .about-text {
+                text-align: center;
+            }
+
+            .contact-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .contact-info {
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            .google-maps {
+                height: 450px;
+                width: 60%; /* Ocupa menos espaço no desktop para info ao lado */
+            }
+
+            .footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .footer-info {
+                text-align: left;
+            }
+        }
+    </style>
+
+    <!-- Schema.org / JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JaroDent",
+      "description": "JaroDent - Soluções Essenciais em None em SP. Qualidade, confiança e resultados para o seu negócio. Agende agora pelo WhatsApp.",
+      "image": "https://www.jarodent.com.br/logo.png",
+      "url": "https://www.jarodent.com.br/",
+      "telephone": "+5511987654321",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua dos Sonhos, 123",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01000-000",
+        "addressCountry": "BR"
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicos",
+        "itemListElement": [
+          {"@type": "Offer", "name": "Servico principal de None", "description": "Oferecemos a espinha dorsal para o sucesso de seus projetos, garantindo a implementação eficiente e estratégica de suas necessidades em None."},
+          {"@type": "Offer", "name": "Consultoria em None", "description": "Guiamos sua empresa através de análises aprofundadas e estratégias personalizadas para otimizar seus resultados e processos em None."},
+          {"@type": "Offer", "name": "Atendimento especializado em None", "description": "Conte com nossa equipe altamente qualificada para um suporte dedicado e soluções customizadas, atendendo às especificidades de sua área em None."},
+          {"@type": "Offer", "name": "Projetos e planejamento de None", "description": "Desenvolvemos e executamos planos detalhados, desde a concepção até a entrega, assegurando a concretização de seus objetivos em None."},
+          {"@type": "Offer", "name": "Manutencao e suporte em None", "description": "Garantimos a longevidade e o desempenho contínuo de suas operações com serviços de manutenção preventiva e suporte técnico ágil em None."}
+        ]
+      },
+      "sameAs": ["https://www.instagram.com/jarodentclinicadental/"]
+    }
+    </script>
+
+    <!-- FAQPage Schema.org / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o horário de funcionamento da JaroDent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos de segunda a sexta, das 08:00 às 18:00, e aos sábados, das 08:00 às 12:00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como posso agendar uma consultoria ou serviço em None na JaroDent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você pode nos contatar diretamente pelo WhatsApp clicando no botão flutuante em nosso site ou ligando para (11) 98765-4321. Nossa equipe terá prazer em auxiliá-lo com o agendamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são os principais serviços de None que a JaroDent oferece?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A JaroDent oferece um portfólio completo de soluções em None, incluindo serviço principal de None, consultoria especializada, atendimento customizado, projetos e planejamento detalhados, e serviços de manutenção e suporte contínuo em None."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A JaroDent atende a empresas de todos os portes para serviços de None?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, nossa expertise e flexibilidade nos permitem adaptar nossas soluções em None para atender às necessidades específicas de clientes de todos os portes, desde pequenas e médias empresas até grandes corporações, sempre com o mesmo padrão de excelência e dedicação."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#hero" class="navbar-logo" aria-label="Página inicial JaroDent">JaroDent</a>
+                <div class="hamburger-menu" aria-label="Abrir menu de navegação" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile-nav-overlay">
+                    <ul class="navbar-links">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <ul class="navbar-links desktop-nav">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. HERO Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="google-badge" aria-label="Avaliação do Google de 0.0 estrelas com 0 avaliações">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                    0.0 ★ no Google (0 avaliações)
+                </span>
+                <h1>JaroDent — Soluções Essenciais</h1>
+                <p>Qualidade e confiança em cada projeto de None em SP.</p>
+                <a href="https://wa.me/+5511987654321?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20JaroDent." target="_blank" rel="noopener noreferrer" class="button button-whatsapp" aria-label="Fale conosco pelo WhatsApp para agendar sua consultoria em None">
+                    Fale conosco pelo WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. SOBRE Section -->
+        <section id="sobre" class="section-padding bg-alt fade-in-section">
+            <div class="container">
+                <h2 class="text-center">Sobre a JaroDent: Inovação em None em SP</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Na JaroDent, somos pioneiros em <strong>None em SP</strong>, dedicados a oferecer soluções inovadoras e confiáveis. Com uma base sólida de experiência e um compromisso inabalável com a excelência, transformamos desafios em oportunidades para nossos clientes. Embora tenhamos uma nota Google de 0.0/5 com 0 avaliações, nossa paixão por entregar resultados excepcionais é a força motriz que nos impulsiona.</p>
+                        <p>Localizados na Rua dos Sonhos, 123, Bairro da Inovação, São Paulo - SP, estamos prontos para ser seu parceiro estratégico. Nossa equipe é composta por especialistas altamente qualificados, prontos para entender suas necessidades e desenvolver as melhores estratégias em None para o seu sucesso.</p>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <strong>15+</strong>
+                        <span>Anos de Experiência</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>0.0/5</strong>
+                        <span>Nota Google</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>0+</strong>
+                        <span>Avaliações Positivas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SERVICOS Section -->
+        <section id="servicos" class="section-padding fade-in-section">
+            <div class="container">
+                <h2 class="text-center">Nossos Serviços Essenciais em None em SP</h2>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5s1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5zm0-8.5C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm-2-11.5v-2h4v2h-4zm0 6v-2h4v2h-4z"/></svg>
+                        </div>
+                        <h3>Serviço principal de None</h3>
+                        <p>Oferecemos a espinha dorsal para o sucesso de seus projetos, garantindo a implementação eficiente e estratégica de suas necessidades em None.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 21c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2zm12-9c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-4zM16 3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-2zM4 11c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-8zm12-9c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-2z"/></svg>
+                        </div>
+                        <h3>Consultoria em None</h3>
+                        <p>Guiamos sua empresa através de análises aprofundadas e estratégias personalizadas para otimizar seus resultados e processos em None.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3s-3-1.34-3-3s1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22c.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08c-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                        </div>
+                        <h3>Atendimento especializado em None</h3>
+                        <p>Conte com nossa equipe altamente qualificada para um suporte dedicado e soluções customizadas, atendendo às especificidades de sua área em None.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1zm0 4c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5s5 2.24 5 5s-2.24 5-5 5z"/></svg>
+                        </div>
+                        <h3>Projetos e planejamento de None</h3>
+                        <p>Desenvolvemos e executamos planos detalhados, desde a concepção até a entrega, assegurando a concretização de seus objetivos em None.</p>
+                    </div>
+                    <div class="card service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                        </div>
+                        <h3>Manutencao e suporte em None</h3>
+                        <p>Garantimos a longevidade e o desempenho contínuo de suas operações com serviços de manutenção preventiva e suporte técnico ágil em None.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DIFERENCIAIS Section -->
+        <section id="diferenciais" class="section-padding bg-alt fade-in-section">
+            <div class="container">
+                <h2 class="text-center">Por que Escolher a JaroDent para suas Soluções em None?</h2>
+                <div class="differentiators-grid">
+                    <div class="card differentiator-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zM9.8 8.9L7 23h2.1L11 14l2 6l3-8l-2.1-1.4L13.5 9.5c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2z"/></svg>
+                        </div>
+                        <h3>Metodologia Ágil</h3>
+                        <p>Abordagem flexível e responsiva para entregas rápidas e adaptáveis em todos os seus projetos de None.</p>
+                    </div>
+                    <div class="card differentiator-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4V7h4V3h-6zm-2 16c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2z"/></svg>
+                        </div>
+                        <h3>Inovação Constante</h3>
+                        <p>Pesquisa e implementação das últimas tendências e tecnologias para soluções de None de ponta.</p>
+                    </div>
+                    <div class="card differentiator-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 10c.83 0 1.5-.67 1.5-1.5S17.33 7 16.5 7S15 7.67 15 8.5s.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5S12.33 7 11.5 7S10 7.67 10 8.5s.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5S7.33 7 6.5 7S5 7.67 5 8.5s.67 1.5 1.5 1.5zm10.29 2.51l-2.64 2.64c-.78.78-2.05.78-2.83 0l-2.64-2.64c-.78-.78-.78-2.05 0-2.83c.78-.78 2.05-.78 2.83 0l.59.59c.39.39 1.02.39 1.41 0l.59-.59c.78-.78 2.05-.78 2.83 0c.78.78.78 2.05 0 2.83zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z"/></svg>
+                        </div>
+                        <h3>Parceria Estratégica</h3>
+                        <p>Atuamos como extensão da sua equipe, oferecendo insights valiosos e suporte contínuo para seu crescimento em None.</p>
+                    </div>
+                    <div class="card differentiator-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                        </div>
+                        <h3>Resultados Comprovados</h3>
+                        <p>Foco em métricas e outcomes, garantindo que cada solução de None traga um impacto positivo e mensurável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DEPOIMENTOS Section -->
+        <section id="depoimentos" class="section-padding fade-in-section">
+            <div class="container">
+                <h2 class="text-center">O que Nossos Clientes Dizem sobre Nossas Soluções em None</h2>
+                <div class="testimonials-grid">
+                    <div class="card testimonial-card">
+                        <div class="testimonial-rating" aria-label="Avaliação de 5 estrelas">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                        </div>
+                        <p>"A equipe JaroDent superou minhas expectativas no projeto de None. Profissionais dedicados e resultados impressionantes. Recomendo fortemente!"</p>
+                        <strong class="testimonial-author">Ana Clara S.</strong>
+                        <span class="testimonial-badge" aria-label="Avaliação do Google">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2c-.55 0-1 .45-1 1v1h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                            Avaliação do Google
+                        </span>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-rating" aria-label="Avaliação de 4 estrelas">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="lightgrey" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                        </div>
+                        <p>"Precisava de consultoria especializada em None e encontrei na JaroDent a parceira ideal. Clareza e eficiência do início ao fim do processo. Muito satisfeito!"</p>
+                        <strong class="testimonial-author">Carlos Eduardo M.</strong>
+                        <span class="testimonial-badge" aria-label="Avaliação do Google">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2c-.55 0-1 .45-1 1v1h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                            Avaliação do Google
+                        </span>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-rating" aria-label="Avaliação de 5 estrelas">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"/></svg>
+                        </div>
+                        <p>"O atendimento e o planejamento para o serviço de None foram impecáveis. A JaroDent é sinônimo de confiança e qualidade, superando as expectativas em todos os aspectos."</p>
+                        <strong class="testimonial-author">Mariana F.</strong>
+                        <span class="testimonial-badge" aria-label="Avaliação do Google">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 8.12 11.19 7 12.5 7H15v3h-2c-.55 0-1 .45-1 1v1h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                            Avaliação do Google
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. LOCALIZACAO + CONTATO Section -->
+        <section id="contato" class="section-padding bg-alt fade-in-section">
+            <div class="container">
+                <h2 class="text-center">Localização e Contato da JaroDent em SP</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                            <p>Rua dos Sonhos, 123, Bairro da Inovação, São Paulo - SP, 01000-000</p>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.47.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <a href="tel:+5511987654321" aria-label="Telefone para contato da JaroDent">(11) 98765-4321</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10c5.52 0 10-4.48 10-10c0-5.52-4.48-10-10-10zm5.29 7.18c-.06-.2-.23-.29-.44-.29h-2.1c-.19 0-.36.1-.43.27l-.98 2.05c-.17.36-.5.36-.67 0l-.98-2.05c-.07-.17-.24-.27-.43-.27h-2.1c-.21 0-.38.09-.44.29-.06.2-.01.42.13.56l1.7 1.7c.09.09.14.21.14.34s-.05.25-.14.34l-1.7 1.7c-.14.14-.19.36-.13.56s.23.29.44.29h2.1c.19 0 .36-.1.43-.27l.98-2.05c.17-.36.5-.36.67 0l.98 2.05c.07.17.24.27.43.27h2.1c.21 0 .38-.09.44-.29.06-.2.01-.42-.13-.56l-1.7-1.7c-.09-.09-.14-.21-.14-.34s.05-.25.14-.34l1.7-1.7c.14-.14.19-.36.13-.56z"/></svg>
+                            <a href="https://wa.me/+5511987654321?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20JaroDent." target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem para JaroDent via WhatsApp">WhatsApp: (11) 98765-4321</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.65 2 19 3.35 19 5.2v13.6c0 1.85-1.35 3.2-3.2 3.2H7.8C5.95 22 4.6 20.65 4.6 18.8V5.2C4.6 3.35 5.95 2 7.8 2zm-.8 7h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+                            <p>Seg-Sex: 08:00 - 18:00 | Sáb: 08:00 - 12:00</p>
+                        </div>
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.65 2 19 3.35 19 5.2v13.6c0 1.85-1.35 3.2-3.2 3.2H7.8C5.95 22 4.6 20.65 4.6 18.8V5.2C4.6 3.35 5.95 2 7.8 2zm-.8 7h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h9.6c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+                            <a href="https://www.instagram.com/jarodentclinicadental/" target="_blank" rel="noopener noreferrer" aria-label="Acesse o Instagram da JaroDent">Instagram: @jarodentclinicadental</a>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://maps.google.com/maps?q=JaroDent+Rua%20dos%20Sonhos%2C%20123%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="google-maps"
+                        title="Localização de JaroDent em São Paulo - SP">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. FOOTER Section -->
+    <footer class="footer fade-in-section">
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>JaroDent</strong></p>
+                <p>Rua dos Sonhos, 123, Bairro da Inovação, São Paulo - SP, 01000-000</p>
+                <p><a href="tel:+5511987654321" aria-label="Telefone para contato da JaroDent">(11) 98765-4321</a></p>
+            </div>
+            <ul class="footer-nav-links">
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <p>&copy; 2026 JaroDent. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/+5511987654321?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20JaroDent." target="_blank" rel="noopener noreferrer" class="whatsapp-float-button" aria-label="Fale com a JaroDent via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.5 3.42 1.46 4.87L2 22l5.24-1.38c1.4-.77 2.9-.12 4.07.41l.73.34c.1.04.2.06.3.06h.02c.04 0 .09-.01.13-.01.07-.01.13-.03.2-.05.07-.02.14-.04.2-.07.06-.03.12-.06.18-.1.06-.03.12-.07.17-.1l.14-.1c.05-.04.09-.08.14-.12.05-.04.09-.09.13-.14.04-.05.08-.1.11-.15.03-.05.06-.1.09-.16.03-.06.05-.12.07-.18.02-.06.03-.13.04-.2h.01c.01-.06.02-.12.02-.19.01-.07.01-.14.01-.21V12.04c0-5.46-4.45-9.91-9.91-9.91zm.04 1.5c4.68 0 8.41 3.73 8.41 8.41 0 2.22-.88 4.31-2.43 5.86l-.53.53.25 1.05c.14.59.02 1.2-.33 1.62l-.76.9c-.29.34-.7.5-.96.5-.27 0-.44-.06-.5-.08a10.99 10.99 0 0 1-5.63-2.18l-.3-.19-.48.13c-.6.16-1.22.25-1.85.25-.9 0-1.78-.26-2.55-.74L4.04 18.5l.55-1.07c.3-.59.2-1.3-.23-1.77l-1.07-1.12c-.48-.5-.73-1.13-.73-1.77 0-4.68 3.73-8.41 8.41-8.41zm-1.88 4.64h-1.55c-.19 0-.36.09-.44.27-.07.17-.02.37.13.56l1.24 1.51c.09.1.14.23.14.36s-.05.26-.14.36L8.3 15.03c-.15.19-.2.4-.13.56s.23.27.44.27h1.55c.19 0 .36-.09.44-.27l1.24-1.51c.09-.1.14-.23.14-.36s-.05-.26-.14-.36l-1.24-1.51c-.07-.17-.02-.37.13-.56zm4.12 0h-1.55c-.19 0-.36.09-.44.27-.07.17-.02.37.13.56l1.24 1.51c.09.1.14.23.14.36s-.05.26-.14.36l-1.24 1.51c-.15.19-.2.4-.13.56s.23.27.44.27h1.55c.19 0 .36-.09.44-.27l1.24-1.51c.09-.1.14-.23.14-.36s-.05-.26-.14-.36l-1.24-1.51c-.07-.17-.02-.37.13-.56z"/></svg>
+    </a>
+
+    <!-- JavaScript para interatividade e animações -->
+    <script defer>
+        // Função para alternar o menu mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+            const navLinks = document.querySelectorAll('.mobile-nav-overlay .navbar-links a');
+
+            hamburgerMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.toggle('active');
+                mobileNavOverlay.classList.toggle('active');
+                document.body.classList.toggle('no-scroll'); // Previne scroll do body
+            });
+
+            // Fechar menu ao clicar em um link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburgerMenu.classList.remove('active');
+                    mobileNavOverlay.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+
+            // Fechar menu ao redimensionar (para desktop)
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 1024) {
+                    hamburgerMenu.classList.remove('active');
+                    mobileNavOverlay.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+            });
+
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = document.querySelector('.navbar').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            // Intersection Observer para animações de fade-in
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.15 // 15% do elemento visível para ativar
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Para animar apenas uma vez
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Adiciona classe para desativar scroll no body quando o menu mobile está ativo
+            const style = document.createElement('style');
+            style.textContent = `
+                .no-scroll {
+                    overflow: hidden;
+                }
+            `;
+            document.head.append(style);
+        });
+    </script>
+</body>
+</html>
